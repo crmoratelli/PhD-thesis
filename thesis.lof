@@ -1,0 +1,75 @@
+\select@language {english}
+\select@language {brazil}
+\select@language {english}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A taxonomy of Virtual Machines. Classic-system VMs are the subject of study of this dissertation. Adapted from \cite {Smith2005}.\relax }}{37}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Types of hypervisors.\relax }}{40}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Type 1 hypervisor.}}}{40}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Type 2 hypervisor.}}}{40}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Illustrating Popek and Goldbergs's Theorem. Adapted from \cite {Smith2005}.\relax }}{42}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Not efficiently virtualizable.}}}{42}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Efficiently virtualizable.}}}{42}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Relation between hypercalls on a virtualized system and syscalls on a typical operating system.\relax }}{43}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Supervisor privileged level for hypervisor execution.\relax }}{46}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Non-virtualized versus virtualized virtual memory address translation.\relax }}{47}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Comparison of the IOMMU to the MMU.\relax }}{49}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Xen's Architecture. Adapted from \cite {xen2003}.\relax }}{54}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces KVM's Architecture.\relax }}{59}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces SPUMONE's single-core Architecture. Adapted from \cite {spumone2008}.\relax }}{66}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces SPUMONE's multicore Architecture. Adapted from \cite {hitoshi2011}.\relax }}{66}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces XtratuM's architecture. It is a type 1 hypervisor designed for safety critical systems. Adapted from \cite {xtratum2010}.\relax }}{68}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Resumed L4 microkernel family tree that resulted in embedded hypervisors. Adapted from \cite {elphinstone2013}.\relax }}{69}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces OKL4's architecture. It was developed targeting mobile devices supporting several mobile OSs, and it powered the first commercial virtualized phone in 2009.\relax }}{70}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Fiasco's architecture. The L4/Fiasco maps the L4Linux kernel threads directly to VCPUs.\relax }}{71}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces PikeOS's architecture. It is a proprietary microkernel with support for virtualization designed to attend safety-critical systems.\relax }}{72}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Xvisor's architecture. The Xvisor hypervisor uses the third privileged level from ARM's architecture.\relax }}{72}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces RT-Linux is a kernel patch that adds a software layer with a real-time scheduler and it makes the Linux kernel to share the processor with real-time tasks.\relax }}{75}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Overall view of the proposed virtualization model.\relax }}{81}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flexible mapping for multiprocessor embedded systems with real-time support.\relax }}{82}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Virtual Hellfire Hypervisor's virtualization model.\relax }}{86}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces MIPS32 memory map.\relax }}{91}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Hypervisor's software block diagram.\relax }}{91}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \relax }}{95}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Virtual memory organization view of our hypervisor.\relax }}{97}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Quantum scheduler scheme for interrupt delivery.\relax }}{100}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Interrupt delayed.}}}{100}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Fast interrupt with recycled quantum.}}}{100}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Fast interrupt with reset quantum.}}}{100}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces An example of inter-VM communication involving two guests.\relax }}{103}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Performance overhead for user-land applications relative to non-virtualized performance.\relax }}{113}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Performance overhead for syscall applications relative to non-virtualized performance.\relax }}{113}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Iperf bandwidth results for TCP protocol comparing native versus virtualized execution with different hypervisor's scheduler \textit {quantum}.\relax }}{114}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Histogram for messages' RTT for native execution of the Linux/MIPS.\relax }}{117}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Histogram for messages' RTT for a system configuration of 2 VCPUs.\relax }}{118}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Without policy.}}}{118}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Fast interrupt policy and quantum recycling.}}}{118}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Fast interrupt policy and quantum reset.}}}{118}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Fast interrupt policy and quantum reset with two non-preemptable VCPUs.}}}{118}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Fast interrupt policy and quantum recycling with two non-preemptable VCPUs.}}}{118}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Histogram for messages' RTT for a system configuration of 4 VCPUs.\relax }}{120}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Without policy.}}}{120}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Fast interrupt policy and quantum recycling.}}}{120}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Fast interrupt policy and quantum reset.}}}{120}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {4 VMs with fast interrupt policy and quantum reset with two non-preemptable VCPUs.}}}{120}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {4 VMs with fast interrupt policy and quantum recyling with two non-preemptable VCPUs.}}}{120}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Histogram for messages' RTT for a system configuration of 6 VCPUs.\relax }}{121}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Without policy.}}}{121}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Fast interrupt policy and quantum recycling.}}}{121}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Fast interrupt policy and quantum reset.}}}{121}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Fast interrupt policy and quantum reset with three non-preemptable VCPUs.}}}{121}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Fast interrupt policy and quantum reset with three non-preemptable VCPUs.}}}{121}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces RTT's histograms for inter-VM communication using the Hellfire Hypervisor communication mechanism.\relax }}{122}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Histogram of the execution delay for RT-VCPUs in microseconds.\relax }}{124}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {System with one RT-VCPU.}}}{124}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {System with four RT-VCPUs.}}}{124}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {System with eight RT-VCPUs.}}}{124}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces System configuration for the ADPCM execution.\relax }}{125}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Histogram of encoding and decoding time for the ADPCM algorithm without external interference. \relax }}{126}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces System behavior without the fast interrupt deliver policy and a non-preemptable RT-VM.\relax }}{126}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Histogram of encoding and decoding time for the ADPCM.}}}{126}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Histogram for ping messages' RTT.}}}{126}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces System behavior with the fast interrupt deliver policy and a preemptable RT-VM.\relax }}{127}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Histogram of encoding and decoding time for the ADPCM.}}}{127}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Histogram for ping messages' RTT.}}}{127}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces System behavior with the fast interrupt deliver policy and a preemptable RT-VM.\relax }}{127}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Histogram of encoding and decoding time for the ADPCM.}}}{127}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Histogram for ping messages' RTT.}}}{127}

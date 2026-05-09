@@ -1,0 +1,49 @@
+\chapter{\label{chapter:conclusions}Conclusions}
+
+This dissertation started by defining the research goal. The objective was to verify hypothesis that is possible to have an embedded lightweight hypervisor capable of supporting the major embedded virtualization requisites. After the study of the state-of-the-art and the current trends in embedded virtualization, this hypothesis was considered true. Thus, the importance of the new hardware-assisted virtualization to accomplish this goal was considered. The hypothesis was refined into different research questions, which were addressed in the chapters of this dissertation. Now, the answers will be summarized. Then, concluding remarks and possible directions for future work will be presented. 
+
+First, the major existing embedded hypervisors were presented. This study provided an understanding the state of the art for embedded virtualization. Several different hypervisors were proposed for embedded virtualization, including modified versions of hypervisors for server virtualization. This study exposed the complexity of the embedded virtualization. The wide range of applications and the variety of embedded processors pushed the appearance of different hypervisor approaches. However, it was possible to identify trends in the current virtualization methods. The footprint is a recurrent challenge in embedded virtualization since its adoption for IoT devices require hypervisors with only a few dozen of kilobytes. Embedded virtualization was firmly based on para-virtualization due to the absence of hardware-assisted virtualization in the previous generations of embedded processors. Embedded processor families have adopted hardware for virtualization. Additionally, spatial isolation between VMs is critical to improve reliability and security. Finally, support for real-time on embedded virtualization is an obligatory feature because real-time is intrinsically related to embedded systems. This  study highlighted the need for a different embedded virtualization approach to better fit the needs of embedded systems. 
+
+Based on these findings, the primary embedded virtualization requisites were determined. These requirements included the need to adoption full-virtualization using hardware-assisted virtualization. Moreover, previous experience with VHH showed that full-virtualization applied on hardware subsets without proper virtualization support results in excessive overhead.  Thus, the model provides full-virtualization of the CPU (covered by hardware-assistance), and para-virtualization for I/O and extended services. The result was a hybrid model that combines full and para-virtualization. Hence, different aspects of embedded virtualization are covered by the model. For example, the model uses the hardware-assisted virtualization to provide spatial isolation while para-virtualization is used for inter-VM communication and to manage real-time services. Temporal isolation is provided by the separation of BE and RT-VCPUs. Finally, the major embedded virtualization features were accommodated in a well-defined virtualization model. 
+
+The proposed embedded virtualization model guided the development of a innovative hypervisor, called Hellfire Hypervisor, to the MIPS M5150 processor. This processor was chosen for different reasons. First, it implements the MIPS-VZ module for hardware-assisted virtualization. Second, the other hypervisors presented do not implement suitable support for MIPS virtualization. Lastly, an instruction accurate simulator and a hardware development board for M5150 was available to the GSE group. The development showed that the model can be implemented with relatively simple algorithms and a small number of lines of code resulting in a small footprint. For example, the virtual memory management was simplified and just a few instructions needed to be emulated. Moreover, almost all proposed embedded virtualization features were supported by the hypervisor. The only exception was the multicore support because the M5150 is a single-core processor. The evaluation of the hypervisor showed that it is efficient and presents low overhead. Additionally, the resulting footprint is acceptable for IoT applications. 
+
+\section{Concluding Remarks}
+
+Based on the research work presented in the dissertation, the main conclusion is that the proposed virtualization model was successful to accommodate the major embedded system requirements. Additionally, the model proved to be efficiently implemented on a hardware platform. Finally, the implementation resulted in a hypervisor with performance and footprint comparable to the currently embedded hypervisors. While the majority of embedded hypervisors adopt para-virtualization exclusively, this work has shown that hardware-assisted virtualization associated with para-virtualization can benefit embedded systems by simplifying the hypervisor and improving performance. 
+
+ The main contributions (including technical and scientific contributions) of this work are:
+
+\begin{itemize}
+    \item A study of state-of-the-art for embedded virtualization and its main trends;
+    \item The characterization of the major features required for embedded virtualization;
+    \item A proposal of an embedded virtualization model;
+    \item An implementation and evaluation of a hypervisor guided by the proposed model.
+\end{itemize}
+
+Lastly, from a more elevated perspective, the resulting hypervisor can benefit the industry and can also be used in commercial applications. 
+
+
+\section{Future Research}
+
+There are many possible directions for future work based on this research. Firstly, this study revealed that hardware-assisted virtualization can be associated with embedded system requirements for the development of hypervisors that better fit embedded virtualization. Thus, when I/O virtualization is supported in embedded hardware, it may be necessary to update the virtualization model to adapt to this new hardware. 
+
+Security is a trend in embedded virtualization. IoT devices will be adopted in large scale in industrial and residential applications. These devices are susceptible to hacker attacks like any other device connected to the network. Thus, techniques to improve security must be adopted for the embedded hypervisors. For example, secure boot methods must be implemented to guarantee the authenticity of the hypervisor and VMs.
+
+In server virtualization, VMs on the same host can perform different services for different users without any relation between them. On the other hand, embedded systems are customized devices with a determined goal. Thus, VMs in an embedded hypervisor can perform different services to accomplish a common goal. As a consequence, the VMs must interact using the hypervisor communication mechanism. Therefore, more efficient and secure communication services must be proposed. 
+
+Multicore processors are widely adopted for embedded devices. Thus, the proposed hypervisor must be ported to a multicore platform. However, multicore support adds concurrent execution at the hypervisor's kernel, which requires synchronization primitives. This increases significantly the hypervisor's kernel complexity, and it can impact on performance. Thus, the port to multicore processors must be carefully designed. 
+
+\section{List of Publications}
+
+This section resumes all publications related to this dissertation in chronological order. Some of these publications are direct-related (D), i.e., publications resulted from this dissertation. The remainder of the publications are indirect-related (I), and they resulted from the work with the VHH. 
+
+\begin{itemize}
+    \item (D) Moratelli, C.; Filho, S.; Hessel, F."Exploring Embedded Systems Virtualization Using MIPS Virtualization Module," in Computing Frontiers (CF, 2016 ACM International Conference on), 16-18 May 2016.
+    \item (D) Moratelli, C.; Filho, S.; Hessel, F."Hardware-assisted interrupt delivery optimization for virtualized embedded platforms," in  Electronics, Circuits, and Systems (ICECS), 2015 IEEE International Conference on), 6-9 December 2015.
+    \item (D) Zampiva, S.; Moratelli, C.; Hessel, F., "A hypervisor approach with real-time support to the MIPS M5150 processor," in Quality Electronic Design (ISQED), 2015 16th International Symposium on , vol., no., pp.495-501, 2-4 March 2015.
+    \item (I) Moratelli, C.; Zampiva, S.; Hessel, F., "Full-virtualization on MIPS-based MPSOCs embedded platforms with real-time support," in Integrated Circuits and Systems Design (SBCCI), 2014 27th Symposium on , vol., no., pp.1-7, 1-5 Sept. 2014.
+    \item (I) Aguiar, A.; Moratelli, C.; Sartori, M.; Hessel, F., "Adding virtualization support in MIPS 4Kc-based MPSoCs," in Quality Electronic Design (ISQED), 2014 15th International Symposium on , vol., no., pp.84-90, 3-5 March 2014.
+    \item (I) Aguiar, A.; Moratelli, C.; Sartori, M.L.L.; Hessel, F., "A virtualization approach for MIPS-based MPSoCs," in Quality Electronic Design (ISQED), 2013 14th International Symposium on , vol., no., pp.611-618, 4-6 March 2013.
+    \item (I) Aguiar, A.; Moratelli, C.; Sartori, M.L.L.; Hessel, F., "Hardware-assisted virtualization targeting MIPS-based SoCs," in Rapid System Prototyping (RSP), 2012 23rd IEEE International Symposium on , vol., no., pp.2-8, 11-12 Oct. 2012.
+\end{itemize}

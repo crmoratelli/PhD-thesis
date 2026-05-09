@@ -1,0 +1,15 @@
+\select@language {english}
+\select@language {brazil}
+\select@language {english}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Example of embedded systems market and devices. Adapted from \cite {Noergaard2005}.\relax }}{36}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Embedded hypervisors' comparative table.\relax }}{73}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Footprint requirements for Xen and KVM.\relax }}{74}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Footprint requirements to the remain hypervisors.\relax }}{75}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Hypercalls as hypervisor's extended services.\relax }}{84}
+\contentsline {table}{\numberline {5.1}{\ignorespaces GuestClt0 register fields. These bits are used to control the hardware accessibility by the guest OS.\relax }}{93}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Example of a set of interrupt rules for a system configured with three guest OSs.\relax }}{101}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Example of memory mapping for a Linux and Hellfire guests.\relax }}{104}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Size of the hypervisor's segments. The sum of all segments is the footprint of the hypervisor during its execution.\relax }}{110}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Average ($\overline {x}$), standard deviation ($s$), median ($m$) and $95^{th}$ percentile ($p^{th}$) for RTT of the messages in milliseconds for Linux native execution.\relax }}{116}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Average ($\overline {x}$), standard deviation ($s$), median ($m$) and $95^{th}$ percentile ($p^{th}$) for RTT of the messages in milliseconds for virtualized Linux execution.\relax }}{116}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Average ($\overline {x}$), standard deviation ($s$), median ($m$) and $95^{th}$ percentile ($p^{th}$) for the execution delay on the SEDF scheduler in microseconds.\relax }}{123}

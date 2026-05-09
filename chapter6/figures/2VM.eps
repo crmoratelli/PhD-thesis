@@ -1,0 +1,6953 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: 2VM.eps
+%%Creator: gnuplot 4.6 patchlevel 4
+%%CreationDate: Fri Jan 15 19:46:53 2016
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 410 302
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -80 def
+/dl1 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 410 50 lineto 410 302 lineto 50 302 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 4.6 (September 2012)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Default Line colors
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default Line Types
+/LTw {PL [] 1 setgray} def
+/LTb {BL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [4 dl1 2 dl2] LC1 DL} def
+/LT2 {PL [2 dl1 3 dl2] LC2 DL} def
+/LT3 {PL [1 dl1 1.5 dl2] LC3 DL} def
+/LT4 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC5 DL} def
+/LT6 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 4 dl2] LC8 DL} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+ 2 lt
+	{/InterpretLevel1 true def}
+	{/InterpretLevel1 Level1 def}
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {Gshow} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     show 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (2VM.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 4.6 patchlevel 4)
+  /Author (moratelli)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Fri Jan 15 19:46:53 2016)
+  /DOCINFO pdfmark
+end
+} ifelse
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Times) findfont 240 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {BackgroundColor C 1.000 0 0 7200.00 5040.00 BoxColFill} if
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+1239 831 M
+5528 0 V
+stroke
+LTb
+LCb setrgbcolor
+1239 831 M
+-63 0 V
+stroke
+1032 831 M
+[ [(Times) 240.0 0.0 true true 0 ( 0)]
+] -80.0 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+1239 1321 M
+5528 0 V
+stroke
+LTb
+LCb setrgbcolor
+1239 1321 M
+-63 0 V
+stroke
+1032 1321 M
+[ [(Times) 240.0 0.0 true true 0 ( 100)]
+] -80.0 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+1239 1811 M
+5528 0 V
+stroke
+LTb
+LCb setrgbcolor
+1239 1811 M
+-63 0 V
+stroke
+1032 1811 M
+[ [(Times) 240.0 0.0 true true 0 ( 200)]
+] -80.0 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+1239 2301 M
+5528 0 V
+stroke
+LTb
+LCb setrgbcolor
+1239 2301 M
+-63 0 V
+stroke
+1032 2301 M
+[ [(Times) 240.0 0.0 true true 0 ( 300)]
+] -80.0 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+1239 2791 M
+5528 0 V
+stroke
+LTb
+LCb setrgbcolor
+1239 2791 M
+-63 0 V
+stroke
+1032 2791 M
+[ [(Times) 240.0 0.0 true true 0 ( 400)]
+] -80.0 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+1239 3281 M
+5528 0 V
+stroke
+LTb
+LCb setrgbcolor
+1239 3281 M
+-63 0 V
+stroke
+1032 3281 M
+[ [(Times) 240.0 0.0 true true 0 ( 500)]
+] -80.0 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+1239 3771 M
+5528 0 V
+stroke
+LTb
+LCb setrgbcolor
+1239 3771 M
+-63 0 V
+stroke
+1032 3771 M
+[ [(Times) 240.0 0.0 true true 0 ( 600)]
+] -80.0 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+1239 4261 M
+5528 0 V
+stroke
+LTb
+LCb setrgbcolor
+1239 4261 M
+-63 0 V
+stroke
+1032 4261 M
+[ [(Times) 240.0 0.0 true true 0 ( 700)]
+] -80.0 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+1239 4751 M
+5528 0 V
+stroke
+LTb
+LCb setrgbcolor
+1239 4751 M
+-63 0 V
+stroke
+1032 4751 M
+[ [(Times) 240.0 0.0 true true 0 ( 800)]
+] -80.0 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+1502 831 M
+0 3920 V
+stroke
+LTb
+LCb setrgbcolor
+1502 831 M
+0 -63 V
+stroke
+1502 528 M
+[ [(Times) 240.0 0.0 true true 0 ( 0.7)]
+] -80.0 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+2553 831 M
+0 3920 V
+stroke
+LTb
+LCb setrgbcolor
+2553 831 M
+0 -63 V
+stroke
+2553 528 M
+[ [(Times) 240.0 0.0 true true 0 ( 7.36)]
+] -80.0 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+3605 831 M
+0 3920 V
+stroke
+LTb
+LCb setrgbcolor
+3605 831 M
+0 -63 V
+stroke
+3605 528 M
+[ [(Times) 240.0 0.0 true true 0 ( 14.02)]
+] -80.0 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+4656 831 M
+0 3920 V
+stroke
+LTb
+LCb setrgbcolor
+4656 831 M
+0 -63 V
+stroke
+4656 528 M
+[ [(Times) 240.0 0.0 true true 0 ( 20.68)]
+] -80.0 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+5708 831 M
+0 3857 V
+0 63 V
+stroke
+LTb
+LCb setrgbcolor
+5708 831 M
+0 -63 V
+stroke
+5708 528 M
+[ [(Times) 240.0 0.0 true true 0 ( 27.34)]
+] -80.0 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTa
+LCa setrgbcolor
+6759 831 M
+0 3920 V
+stroke
+LTb
+LCb setrgbcolor
+6759 831 M
+0 -63 V
+stroke
+6759 528 M
+[ [(Times) 240.0 0.0 true true 0 ( 34)]
+] -80.0 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+1239 4751 N
+0 -3920 V
+5528 0 V
+0 3920 V
+-5528 0 V
+Z stroke
+LCb setrgbcolor
+192 2791 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Times) 240.0 0.0 true true 0 (Frequency)]
+] -80.0 MCshow
+grestore
+LTb
+LCb setrgbcolor
+4003 168 M
+[ [(Times) 240.0 0.0 true true 0 (Time \(ms\))]
+] -80.0 MCshow
+LTb
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+0.75 0.75 0.75 C 0.500 1541 831 2 6 BoxColFill
+1541 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1549 831 2 55 BoxColFill
+1549 831 N
+0 54 V
+1 0 V
+0 -54 V
+-1 0 V
+Z stroke
+0.500 1550 831 2 369 BoxColFill
+1550 831 N
+0 368 V
+1 0 V
+0 -368 V
+-1 0 V
+Z stroke
+0.500 1552 831 2 574 BoxColFill
+1552 831 N
+0 573 V
+1 0 V
+0 -573 V
+-1 0 V
+Z stroke
+0.500 1553 831 2 1476 BoxColFill
+1553 831 N
+0 1475 V
+1 0 V
+0 -1475 V
+-1 0 V
+Z stroke
+0.500 1555 831 2 643 BoxColFill
+1555 831 N
+0 642 V
+1 0 V
+0 -642 V
+-1 0 V
+Z stroke
+0.500 1557 831 2 1064 BoxColFill
+1557 831 N
+0 1063 V
+1 0 V
+0 -1063 V
+-1 0 V
+Z stroke
+0.500 1558 831 2 1549 BoxColFill
+1558 831 N
+0 1548 V
+1 0 V
+0 -1548 V
+-1 0 V
+Z stroke
+0.500 1560 831 1 3901 BoxColFill
+1560 831 N
+0 3900 V
+0 -3900 V
+Z stroke
+0.500 1561 831 2 2985 BoxColFill
+1561 831 N
+0 2984 V
+1 0 V
+0 -2984 V
+-1 0 V
+Z stroke
+0.500 1563 831 2 1643 BoxColFill
+1563 831 N
+0 1642 V
+1 0 V
+0 -1642 V
+-1 0 V
+Z stroke
+0.500 1565 831 2 2637 BoxColFill
+1565 831 N
+0 2636 V
+1 0 V
+0 -2636 V
+-1 0 V
+Z stroke
+0.500 1567 831 1 1417 BoxColFill
+1567 831 N
+0 1416 V
+0 -1416 V
+Z stroke
+0.500 1568 831 1 1226 BoxColFill
+1568 831 N
+0 1225 V
+0 -1225 V
+Z stroke
+0.500 1569 831 2 712 BoxColFill
+1569 831 N
+0 711 V
+1 0 V
+0 -711 V
+-1 0 V
+Z stroke
+0.500 1571 831 2 467 BoxColFill
+1571 831 N
+0 466 V
+1 0 V
+0 -466 V
+-1 0 V
+Z stroke
+0.500 1573 831 2 388 BoxColFill
+1573 831 N
+0 387 V
+1 0 V
+0 -387 V
+-1 0 V
+Z stroke
+0.500 1575 831 1 261 BoxColFill
+1575 831 N
+0 260 V
+0 -260 V
+Z stroke
+0.500 1575 831 2 187 BoxColFill
+1575 831 N
+0 186 V
+1 0 V
+0 -186 V
+-1 0 V
+Z stroke
+0.500 1577 831 2 192 BoxColFill
+1577 831 N
+0 191 V
+1 0 V
+0 -191 V
+-1 0 V
+Z stroke
+0.500 1579 831 2 124 BoxColFill
+1579 831 N
+0 123 V
+1 0 V
+0 -123 V
+-1 0 V
+Z stroke
+0.500 1581 831 1 104 BoxColFill
+1581 831 N
+0 103 V
+0 -103 V
+Z stroke
+0.500 1582 831 2 75 BoxColFill
+1582 831 N
+0 74 V
+1 0 V
+0 -74 V
+-1 0 V
+Z stroke
+0.500 1583 831 2 84 BoxColFill
+1583 831 N
+0 83 V
+1 0 V
+0 -83 V
+-1 0 V
+Z stroke
+0.500 1585 831 2 55 BoxColFill
+1585 831 N
+0 54 V
+1 0 V
+0 -54 V
+-1 0 V
+Z stroke
+0.500 1587 831 2 50 BoxColFill
+1587 831 N
+0 49 V
+1 0 V
+0 -49 V
+-1 0 V
+Z stroke
+0.500 1589 831 1 35 BoxColFill
+1589 831 N
+0 34 V
+0 -34 V
+Z stroke
+0.500 1590 831 2 40 BoxColFill
+1590 831 N
+0 39 V
+1 0 V
+0 -39 V
+-1 0 V
+Z stroke
+0.500 1591 831 2 30 BoxColFill
+1591 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 1593 831 2 40 BoxColFill
+1593 831 N
+0 39 V
+1 0 V
+0 -39 V
+-1 0 V
+Z stroke
+0.500 1595 831 1 26 BoxColFill
+1595 831 N
+0 25 V
+0 -25 V
+Z stroke
+0.500 1596 831 2 35 BoxColFill
+1596 831 N
+0 34 V
+1 0 V
+0 -34 V
+-1 0 V
+Z stroke
+0.500 1598 831 2 50 BoxColFill
+1598 831 N
+0 49 V
+1 0 V
+0 -49 V
+-1 0 V
+Z stroke
+0.500 1599 831 2 55 BoxColFill
+1599 831 N
+0 54 V
+1 0 V
+0 -54 V
+-1 0 V
+Z stroke
+0.500 1601 831 2 6 BoxColFill
+1601 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1603 831 1 21 BoxColFill
+1603 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 1604 831 2 26 BoxColFill
+1604 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 1606 831 2 16 BoxColFill
+1606 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1607 831 2 26 BoxColFill
+1607 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 1609 831 1 21 BoxColFill
+1609 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 1610 831 2 30 BoxColFill
+1610 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 1612 831 2 30 BoxColFill
+1612 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 1614 831 2 21 BoxColFill
+1614 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1615 831 2 30 BoxColFill
+1615 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 1617 831 1 26 BoxColFill
+1617 831 N
+0 25 V
+0 -25 V
+Z stroke
+0.500 1618 831 2 79 BoxColFill
+1618 831 N
+0 78 V
+1 0 V
+0 -78 V
+-1 0 V
+Z stroke
+0.500 1620 831 2 50 BoxColFill
+1620 831 N
+0 49 V
+1 0 V
+0 -49 V
+-1 0 V
+Z stroke
+0.500 1622 831 2 79 BoxColFill
+1622 831 N
+0 78 V
+1 0 V
+0 -78 V
+-1 0 V
+Z stroke
+0.500 1623 831 2 89 BoxColFill
+1623 831 N
+0 88 V
+1 0 V
+0 -88 V
+-1 0 V
+Z stroke
+0.500 1624 831 2 60 BoxColFill
+1624 831 N
+0 59 V
+1 0 V
+0 -59 V
+-1 0 V
+Z stroke
+0.500 1626 831 2 104 BoxColFill
+1626 831 N
+0 103 V
+1 0 V
+0 -103 V
+-1 0 V
+Z stroke
+0.500 1628 831 2 70 BoxColFill
+1628 831 N
+0 69 V
+1 0 V
+0 -69 V
+-1 0 V
+Z stroke
+0.500 1630 831 2 50 BoxColFill
+1630 831 N
+0 49 V
+1 0 V
+0 -49 V
+-1 0 V
+Z stroke
+0.500 1631 831 1 79 BoxColFill
+1631 831 N
+0 78 V
+0 -78 V
+Z stroke
+0.500 1632 831 2 45 BoxColFill
+1632 831 N
+0 44 V
+1 0 V
+0 -44 V
+-1 0 V
+Z stroke
+0.500 1634 831 2 55 BoxColFill
+1634 831 N
+0 54 V
+1 0 V
+0 -54 V
+-1 0 V
+Z stroke
+0.500 1636 831 2 40 BoxColFill
+1636 831 N
+0 39 V
+1 0 V
+0 -39 V
+-1 0 V
+Z stroke
+0.500 1638 831 1 21 BoxColFill
+1638 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 1638 831 2 11 BoxColFill
+1638 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1640 831 2 30 BoxColFill
+1640 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 1642 831 2 11 BoxColFill
+1642 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1644 831 2 21 BoxColFill
+1644 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1645 831 2 21 BoxColFill
+1645 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1648 831 2 6 BoxColFill
+1648 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1650 831 2 11 BoxColFill
+1650 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1653 831 2 16 BoxColFill
+1653 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1654 831 2 30 BoxColFill
+1654 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 1656 831 2 21 BoxColFill
+1656 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1660 831 1 11 BoxColFill
+1660 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 1661 831 2 26 BoxColFill
+1661 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 1662 831 2 16 BoxColFill
+1662 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1666 831 1 6 BoxColFill
+1666 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 1669 831 2 11 BoxColFill
+1669 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1674 831 1 16 BoxColFill
+1674 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 1675 831 2 16 BoxColFill
+1675 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1678 831 2 6 BoxColFill
+1678 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1683 831 2 6 BoxColFill
+1683 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1686 831 2 6 BoxColFill
+1686 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1689 831 2 6 BoxColFill
+1689 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1695 831 2 11 BoxColFill
+1695 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1697 831 2 21 BoxColFill
+1697 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1699 831 2 11 BoxColFill
+1699 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1701 831 1 6 BoxColFill
+1701 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 1702 831 1 11 BoxColFill
+1702 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 1705 831 2 11 BoxColFill
+1705 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1709 831 2 16 BoxColFill
+1709 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1711 831 2 6 BoxColFill
+1711 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1713 831 2 6 BoxColFill
+1713 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1715 831 2 6 BoxColFill
+1715 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1716 831 2 11 BoxColFill
+1716 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1721 831 2 6 BoxColFill
+1721 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1723 831 1 6 BoxColFill
+1723 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 1724 831 2 11 BoxColFill
+1724 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1725 831 2 11 BoxColFill
+1725 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1727 831 2 6 BoxColFill
+1727 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1729 831 2 6 BoxColFill
+1729 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1730 831 2 6 BoxColFill
+1730 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1732 831 2 6 BoxColFill
+1732 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1733 831 2 11 BoxColFill
+1733 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1735 831 2 6 BoxColFill
+1735 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1737 831 1 6 BoxColFill
+1737 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 1738 831 2 6 BoxColFill
+1738 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1740 831 2 21 BoxColFill
+1740 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1742 831 2 16 BoxColFill
+1742 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1745 831 1 6 BoxColFill
+1745 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 1746 831 2 11 BoxColFill
+1746 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1750 831 2 11 BoxColFill
+1750 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1752 831 2 11 BoxColFill
+1752 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1754 831 2 6 BoxColFill
+1754 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1756 831 2 26 BoxColFill
+1756 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 1758 831 1 21 BoxColFill
+1758 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 1759 831 1 16 BoxColFill
+1759 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 1762 831 2 11 BoxColFill
+1762 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1764 831 2 6 BoxColFill
+1764 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1766 831 1 11 BoxColFill
+1766 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 1766 831 2 6 BoxColFill
+1766 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1768 831 2 6 BoxColFill
+1768 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1770 831 2 6 BoxColFill
+1770 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1772 831 1 11 BoxColFill
+1772 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 1773 831 2 16 BoxColFill
+1773 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1774 831 2 6 BoxColFill
+1774 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1776 831 2 6 BoxColFill
+1776 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1780 831 1 16 BoxColFill
+1780 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 1782 831 2 6 BoxColFill
+1782 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1784 831 2 11 BoxColFill
+1784 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1786 831 1 16 BoxColFill
+1786 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 1787 831 2 6 BoxColFill
+1787 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1789 831 2 6 BoxColFill
+1789 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1790 831 2 26 BoxColFill
+1790 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 1792 831 2 11 BoxColFill
+1792 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1794 831 1 16 BoxColFill
+1794 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 1795 831 2 6 BoxColFill
+1795 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1798 831 2 6 BoxColFill
+1798 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1800 831 1 11 BoxColFill
+1800 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 1801 831 2 21 BoxColFill
+1801 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1803 831 2 11 BoxColFill
+1803 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1805 831 2 16 BoxColFill
+1805 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1806 831 2 11 BoxColFill
+1806 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1809 831 2 16 BoxColFill
+1809 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1811 831 2 11 BoxColFill
+1811 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1813 831 2 6 BoxColFill
+1813 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1814 831 2 6 BoxColFill
+1814 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1815 831 2 16 BoxColFill
+1815 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1817 831 2 30 BoxColFill
+1817 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 1819 831 2 6 BoxColFill
+1819 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1822 831 1 11 BoxColFill
+1822 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 1823 831 2 6 BoxColFill
+1823 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1827 831 2 11 BoxColFill
+1827 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1829 831 1 11 BoxColFill
+1829 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 1829 831 2 6 BoxColFill
+1829 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1831 831 2 21 BoxColFill
+1831 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1833 831 2 6 BoxColFill
+1833 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1835 831 2 6 BoxColFill
+1835 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1837 831 1 16 BoxColFill
+1837 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 1837 831 2 6 BoxColFill
+1837 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1839 831 2 11 BoxColFill
+1839 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1843 831 1 11 BoxColFill
+1843 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 1844 831 2 11 BoxColFill
+1844 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1845 831 2 6 BoxColFill
+1845 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1847 831 2 11 BoxColFill
+1847 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1849 831 2 16 BoxColFill
+1849 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1851 831 1 6 BoxColFill
+1851 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 1855 831 2 6 BoxColFill
+1855 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1857 831 1 6 BoxColFill
+1857 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 1858 831 2 6 BoxColFill
+1858 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1860 831 2 6 BoxColFill
+1860 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1865 831 1 6 BoxColFill
+1865 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 1868 831 2 6 BoxColFill
+1868 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1869 831 2 6 BoxColFill
+1869 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1871 831 1 11 BoxColFill
+1871 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 1872 831 2 6 BoxColFill
+1872 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1874 831 2 16 BoxColFill
+1874 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1877 831 2 6 BoxColFill
+1877 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1880 831 2 11 BoxColFill
+1880 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1882 831 2 11 BoxColFill
+1882 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1884 831 2 6 BoxColFill
+1884 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1885 831 1 6 BoxColFill
+1885 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 1886 831 2 16 BoxColFill
+1886 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1888 831 2 6 BoxColFill
+1888 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1890 831 2 6 BoxColFill
+1890 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1892 831 1 6 BoxColFill
+1892 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 1893 831 1 11 BoxColFill
+1893 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 1894 831 2 6 BoxColFill
+1894 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1896 831 2 11 BoxColFill
+1896 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1898 831 2 6 BoxColFill
+1898 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1900 831 1 11 BoxColFill
+1900 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 1900 831 2 6 BoxColFill
+1900 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1904 831 2 11 BoxColFill
+1904 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1907 831 2 11 BoxColFill
+1907 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1908 831 2 26 BoxColFill
+1908 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 1912 831 2 11 BoxColFill
+1912 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1914 831 1 6 BoxColFill
+1914 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 1915 831 2 11 BoxColFill
+1915 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1917 831 2 11 BoxColFill
+1917 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1920 831 2 45 BoxColFill
+1920 831 N
+0 44 V
+1 0 V
+0 -44 V
+-1 0 V
+Z stroke
+0.500 1921 831 2 6 BoxColFill
+1921 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1923 831 2 6 BoxColFill
+1923 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1925 831 2 11 BoxColFill
+1925 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1926 831 2 16 BoxColFill
+1926 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1928 831 1 11 BoxColFill
+1928 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 1929 831 2 6 BoxColFill
+1929 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1931 831 2 21 BoxColFill
+1931 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1933 831 2 11 BoxColFill
+1933 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1934 831 2 16 BoxColFill
+1934 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1936 831 1 21 BoxColFill
+1936 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 1937 831 2 16 BoxColFill
+1937 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1939 831 2 6 BoxColFill
+1939 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1943 831 2 6 BoxColFill
+1943 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1945 831 2 16 BoxColFill
+1945 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1947 831 2 16 BoxColFill
+1947 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1949 831 1 21 BoxColFill
+1949 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 1950 831 1 21 BoxColFill
+1950 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 1951 831 2 11 BoxColFill
+1951 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1953 831 2 11 BoxColFill
+1953 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1955 831 2 6 BoxColFill
+1955 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1957 831 1 16 BoxColFill
+1957 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 1957 831 2 11 BoxColFill
+1957 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1961 831 2 6 BoxColFill
+1961 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1963 831 1 6 BoxColFill
+1963 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 1965 831 2 11 BoxColFill
+1965 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1967 831 2 21 BoxColFill
+1967 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1971 831 1 16 BoxColFill
+1971 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 1972 831 2 21 BoxColFill
+1972 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1973 831 2 21 BoxColFill
+1973 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1975 831 2 11 BoxColFill
+1975 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1977 831 1 11 BoxColFill
+1977 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 1978 831 2 21 BoxColFill
+1978 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1980 831 2 11 BoxColFill
+1980 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1981 831 2 16 BoxColFill
+1981 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 1985 831 1 6 BoxColFill
+1985 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 1986 831 2 6 BoxColFill
+1986 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1989 831 2 21 BoxColFill
+1989 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 1994 831 2 6 BoxColFill
+1994 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 1996 831 2 11 BoxColFill
+1996 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1997 831 2 11 BoxColFill
+1997 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 1999 831 1 6 BoxColFill
+1999 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2000 831 2 30 BoxColFill
+2000 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 2002 831 2 11 BoxColFill
+2002 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2004 831 2 6 BoxColFill
+2004 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2005 831 2 11 BoxColFill
+2005 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2006 831 2 6 BoxColFill
+2006 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2008 831 2 6 BoxColFill
+2008 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2012 831 2 11 BoxColFill
+2012 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2013 831 1 16 BoxColFill
+2013 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2014 831 2 11 BoxColFill
+2014 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2016 831 2 6 BoxColFill
+2016 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2018 831 2 6 BoxColFill
+2018 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2022 831 2 6 BoxColFill
+2022 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2024 831 2 6 BoxColFill
+2024 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2026 831 2 11 BoxColFill
+2026 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2028 831 2 11 BoxColFill
+2028 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2030 831 2 6 BoxColFill
+2030 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2032 831 2 16 BoxColFill
+2032 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2035 831 2 11 BoxColFill
+2035 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2042 831 1 16 BoxColFill
+2042 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2043 831 2 11 BoxColFill
+2043 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2044 831 2 16 BoxColFill
+2044 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2051 831 2 6 BoxColFill
+2051 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2052 831 2 6 BoxColFill
+2052 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2054 831 2 16 BoxColFill
+2054 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2056 831 1 6 BoxColFill
+2056 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2059 831 2 6 BoxColFill
+2059 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2060 831 2 16 BoxColFill
+2060 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2062 831 1 11 BoxColFill
+2062 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2063 831 2 16 BoxColFill
+2063 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2065 831 2 6 BoxColFill
+2065 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2067 831 2 6 BoxColFill
+2067 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2068 831 2 11 BoxColFill
+2068 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2070 831 1 6 BoxColFill
+2070 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2071 831 2 11 BoxColFill
+2071 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2073 831 2 11 BoxColFill
+2073 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2075 831 2 21 BoxColFill
+2075 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2076 831 1 11 BoxColFill
+2076 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2077 831 2 6 BoxColFill
+2077 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2079 831 2 16 BoxColFill
+2079 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2081 831 2 16 BoxColFill
+2081 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2083 831 2 26 BoxColFill
+2083 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 2085 831 2 6 BoxColFill
+2085 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2087 831 2 11 BoxColFill
+2087 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2089 831 2 11 BoxColFill
+2089 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2091 831 1 6 BoxColFill
+2091 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2092 831 2 21 BoxColFill
+2092 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2093 831 2 6 BoxColFill
+2093 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2095 831 2 11 BoxColFill
+2095 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2097 831 2 30 BoxColFill
+2097 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 2098 831 2 16 BoxColFill
+2098 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2100 831 2 6 BoxColFill
+2100 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2101 831 2 6 BoxColFill
+2101 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2103 831 2 11 BoxColFill
+2103 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2105 831 1 6 BoxColFill
+2105 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2106 831 2 6 BoxColFill
+2106 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2108 831 2 6 BoxColFill
+2108 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2109 831 2 11 BoxColFill
+2109 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2111 831 2 16 BoxColFill
+2111 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2113 831 1 11 BoxColFill
+2113 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2114 831 2 30 BoxColFill
+2114 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 2116 831 2 11 BoxColFill
+2116 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2117 831 2 6 BoxColFill
+2117 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2119 831 1 6 BoxColFill
+2119 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2120 831 2 11 BoxColFill
+2120 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2122 831 2 30 BoxColFill
+2122 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 2124 831 2 16 BoxColFill
+2124 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2125 831 2 11 BoxColFill
+2125 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2127 831 1 6 BoxColFill
+2127 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2128 831 2 16 BoxColFill
+2128 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2130 831 2 16 BoxColFill
+2130 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2132 831 2 6 BoxColFill
+2132 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2136 831 2 6 BoxColFill
+2136 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2138 831 2 6 BoxColFill
+2138 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2140 831 1 6 BoxColFill
+2140 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2141 831 1 16 BoxColFill
+2141 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2142 831 2 11 BoxColFill
+2142 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2148 831 1 6 BoxColFill
+2148 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2148 831 2 11 BoxColFill
+2148 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2150 831 2 16 BoxColFill
+2150 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2152 831 2 16 BoxColFill
+2152 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2154 831 1 6 BoxColFill
+2154 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2155 831 2 6 BoxColFill
+2155 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2156 831 2 11 BoxColFill
+2156 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2158 831 2 16 BoxColFill
+2158 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2160 831 2 16 BoxColFill
+2160 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2162 831 1 11 BoxColFill
+2162 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2163 831 2 11 BoxColFill
+2163 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2164 831 2 16 BoxColFill
+2164 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2168 831 2 6 BoxColFill
+2168 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2172 831 2 6 BoxColFill
+2172 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2174 831 2 11 BoxColFill
+2174 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2176 831 1 11 BoxColFill
+2176 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2177 831 2 11 BoxColFill
+2177 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2179 831 2 11 BoxColFill
+2179 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2180 831 2 11 BoxColFill
+2180 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2182 831 2 11 BoxColFill
+2182 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2183 831 2 6 BoxColFill
+2183 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2188 831 2 6 BoxColFill
+2188 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2193 831 2 6 BoxColFill
+2193 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2198 831 1 6 BoxColFill
+2198 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2199 831 2 6 BoxColFill
+2199 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2201 831 2 6 BoxColFill
+2201 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2203 831 2 16 BoxColFill
+2203 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2205 831 2 11 BoxColFill
+2205 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2209 831 2 6 BoxColFill
+2209 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2212 831 1 6 BoxColFill
+2212 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2217 831 2 6 BoxColFill
+2217 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2219 831 1 11 BoxColFill
+2219 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2219 831 2 16 BoxColFill
+2219 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2221 831 2 6 BoxColFill
+2221 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2223 831 2 6 BoxColFill
+2223 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2225 831 1 6 BoxColFill
+2225 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2226 831 2 11 BoxColFill
+2226 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2227 831 2 11 BoxColFill
+2227 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2229 831 2 11 BoxColFill
+2229 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2231 831 2 11 BoxColFill
+2231 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2233 831 1 6 BoxColFill
+2233 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2234 831 2 11 BoxColFill
+2234 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2235 831 2 11 BoxColFill
+2235 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2237 831 2 16 BoxColFill
+2237 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2239 831 1 11 BoxColFill
+2239 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2240 831 2 11 BoxColFill
+2240 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2242 831 2 21 BoxColFill
+2242 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2243 831 2 6 BoxColFill
+2243 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2245 831 2 16 BoxColFill
+2245 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2247 831 1 21 BoxColFill
+2247 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 2248 831 2 11 BoxColFill
+2248 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2250 831 2 16 BoxColFill
+2250 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2251 831 2 16 BoxColFill
+2251 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2253 831 1 21 BoxColFill
+2253 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 2254 831 2 11 BoxColFill
+2254 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2256 831 2 16 BoxColFill
+2256 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2258 831 2 16 BoxColFill
+2258 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2259 831 2 30 BoxColFill
+2259 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 2261 831 1 11 BoxColFill
+2261 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2262 831 2 11 BoxColFill
+2262 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2264 831 2 16 BoxColFill
+2264 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2266 831 2 11 BoxColFill
+2266 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2268 831 2 6 BoxColFill
+2268 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2270 831 2 30 BoxColFill
+2270 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 2274 831 2 26 BoxColFill
+2274 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 2275 831 2 11 BoxColFill
+2275 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2276 831 2 11 BoxColFill
+2276 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2278 831 2 16 BoxColFill
+2278 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2282 831 1 6 BoxColFill
+2282 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2283 831 2 21 BoxColFill
+2283 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2284 831 2 11 BoxColFill
+2284 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2286 831 2 16 BoxColFill
+2286 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2288 831 2 6 BoxColFill
+2288 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2290 831 1 16 BoxColFill
+2290 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2291 831 2 6 BoxColFill
+2291 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2292 831 2 11 BoxColFill
+2292 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2294 831 2 11 BoxColFill
+2294 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2296 831 1 16 BoxColFill
+2296 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2299 831 2 16 BoxColFill
+2299 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2300 831 2 16 BoxColFill
+2300 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2302 831 2 11 BoxColFill
+2302 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2307 831 2 11 BoxColFill
+2307 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2308 831 2 11 BoxColFill
+2308 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2310 831 1 21 BoxColFill
+2310 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 2311 831 2 6 BoxColFill
+2311 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2313 831 2 21 BoxColFill
+2313 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2315 831 2 11 BoxColFill
+2315 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2318 831 1 6 BoxColFill
+2318 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2319 831 2 16 BoxColFill
+2319 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2321 831 2 6 BoxColFill
+2321 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2323 831 2 6 BoxColFill
+2323 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2324 831 1 16 BoxColFill
+2324 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2325 831 2 11 BoxColFill
+2325 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2327 831 2 16 BoxColFill
+2327 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2329 831 2 11 BoxColFill
+2329 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2331 831 1 6 BoxColFill
+2331 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2332 831 1 11 BoxColFill
+2332 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2333 831 2 6 BoxColFill
+2333 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2335 831 2 6 BoxColFill
+2335 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2339 831 1 6 BoxColFill
+2339 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2343 831 2 6 BoxColFill
+2343 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2345 831 1 6 BoxColFill
+2345 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2353 831 1 11 BoxColFill
+2353 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2355 831 2 11 BoxColFill
+2355 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2359 831 2 6 BoxColFill
+2359 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2360 831 2 6 BoxColFill
+2360 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2363 831 2 6 BoxColFill
+2363 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2365 831 2 16 BoxColFill
+2365 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2368 831 2 6 BoxColFill
+2368 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2371 831 2 6 BoxColFill
+2371 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2373 831 2 11 BoxColFill
+2373 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2376 831 2 6 BoxColFill
+2376 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2378 831 2 16 BoxColFill
+2378 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2379 831 2 16 BoxColFill
+2379 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2381 831 1 11 BoxColFill
+2381 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2382 831 2 16 BoxColFill
+2382 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2384 831 2 21 BoxColFill
+2384 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2387 831 2 6 BoxColFill
+2387 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2389 831 1 11 BoxColFill
+2389 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2392 831 2 21 BoxColFill
+2392 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2394 831 2 6 BoxColFill
+2394 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2395 831 1 16 BoxColFill
+2395 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2396 831 2 11 BoxColFill
+2396 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2398 831 2 6 BoxColFill
+2398 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2403 831 1 6 BoxColFill
+2403 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2404 831 2 26 BoxColFill
+2404 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 2406 831 2 21 BoxColFill
+2406 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2408 831 2 16 BoxColFill
+2408 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2410 831 2 6 BoxColFill
+2410 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2412 831 2 11 BoxColFill
+2412 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2414 831 2 26 BoxColFill
+2414 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 2416 831 1 11 BoxColFill
+2416 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2417 831 2 16 BoxColFill
+2417 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2418 831 2 6 BoxColFill
+2418 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2420 831 2 6 BoxColFill
+2420 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2422 831 2 11 BoxColFill
+2422 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2424 831 1 16 BoxColFill
+2424 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2425 831 2 11 BoxColFill
+2425 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2426 831 2 6 BoxColFill
+2426 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2428 831 2 11 BoxColFill
+2428 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2430 831 1 21 BoxColFill
+2430 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 2431 831 2 6 BoxColFill
+2431 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2433 831 2 30 BoxColFill
+2433 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 2434 831 2 16 BoxColFill
+2434 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2436 831 2 30 BoxColFill
+2436 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 2438 831 1 21 BoxColFill
+2438 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 2439 831 2 6 BoxColFill
+2439 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2441 831 2 11 BoxColFill
+2441 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2443 831 2 11 BoxColFill
+2443 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2444 831 2 6 BoxColFill
+2444 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2445 831 2 6 BoxColFill
+2445 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2447 831 2 6 BoxColFill
+2447 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2449 831 2 30 BoxColFill
+2449 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 2451 831 2 11 BoxColFill
+2451 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2452 831 1 6 BoxColFill
+2452 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2453 831 2 11 BoxColFill
+2453 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2455 831 2 11 BoxColFill
+2455 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2457 831 2 6 BoxColFill
+2457 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2459 831 1 16 BoxColFill
+2459 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2459 831 2 11 BoxColFill
+2459 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2461 831 2 6 BoxColFill
+2461 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2463 831 2 16 BoxColFill
+2463 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2465 831 2 6 BoxColFill
+2465 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2466 831 2 21 BoxColFill
+2466 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2469 831 2 6 BoxColFill
+2469 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2473 831 1 16 BoxColFill
+2473 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2474 831 2 11 BoxColFill
+2474 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2475 831 2 6 BoxColFill
+2475 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2477 831 2 11 BoxColFill
+2477 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2482 831 2 6 BoxColFill
+2482 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2485 831 2 16 BoxColFill
+2485 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2487 831 1 6 BoxColFill
+2487 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2491 831 2 6 BoxColFill
+2491 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2493 831 2 6 BoxColFill
+2493 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2495 831 1 11 BoxColFill
+2495 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2496 831 2 11 BoxColFill
+2496 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2502 831 2 26 BoxColFill
+2502 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 2506 831 2 6 BoxColFill
+2506 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2507 831 2 6 BoxColFill
+2507 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2509 831 1 16 BoxColFill
+2509 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2510 831 2 16 BoxColFill
+2510 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2512 831 2 6 BoxColFill
+2512 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2515 831 1 6 BoxColFill
+2515 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2516 831 2 6 BoxColFill
+2516 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2518 831 2 11 BoxColFill
+2518 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2520 831 2 11 BoxColFill
+2520 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2524 831 2 11 BoxColFill
+2524 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2526 831 2 11 BoxColFill
+2526 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2528 831 2 6 BoxColFill
+2528 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2530 831 1 6 BoxColFill
+2530 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2530 831 2 11 BoxColFill
+2530 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2532 831 2 11 BoxColFill
+2532 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2534 831 2 6 BoxColFill
+2534 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2536 831 2 16 BoxColFill
+2536 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2538 831 2 11 BoxColFill
+2538 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2540 831 2 6 BoxColFill
+2540 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2542 831 2 16 BoxColFill
+2542 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2545 831 2 6 BoxColFill
+2545 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2548 831 2 11 BoxColFill
+2548 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2550 831 2 21 BoxColFill
+2550 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2551 831 2 11 BoxColFill
+2551 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2553 831 2 16 BoxColFill
+2553 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2554 831 2 6 BoxColFill
+2554 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2556 831 2 16 BoxColFill
+2556 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2558 831 1 21 BoxColFill
+2558 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 2559 831 2 6 BoxColFill
+2559 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2561 831 2 6 BoxColFill
+2561 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2562 831 2 11 BoxColFill
+2562 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2564 831 2 11 BoxColFill
+2564 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2566 831 1 11 BoxColFill
+2566 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2567 831 2 6 BoxColFill
+2567 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2569 831 2 11 BoxColFill
+2569 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2570 831 2 16 BoxColFill
+2570 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2573 831 2 11 BoxColFill
+2573 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2575 831 2 11 BoxColFill
+2575 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2577 831 2 11 BoxColFill
+2577 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2578 831 2 26 BoxColFill
+2578 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 2581 831 2 11 BoxColFill
+2581 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2583 831 2 35 BoxColFill
+2583 831 N
+0 34 V
+1 0 V
+0 -34 V
+-1 0 V
+Z stroke
+0.500 2585 831 2 16 BoxColFill
+2585 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2586 831 1 16 BoxColFill
+2586 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2587 831 2 11 BoxColFill
+2587 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2589 831 2 16 BoxColFill
+2589 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2591 831 2 6 BoxColFill
+2591 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2593 831 1 16 BoxColFill
+2593 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2594 831 1 6 BoxColFill
+2594 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2595 831 2 21 BoxColFill
+2595 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2597 831 2 11 BoxColFill
+2597 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2599 831 2 16 BoxColFill
+2599 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2601 831 1 6 BoxColFill
+2601 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2601 831 2 16 BoxColFill
+2601 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2603 831 2 11 BoxColFill
+2603 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2605 831 2 11 BoxColFill
+2605 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2607 831 1 11 BoxColFill
+2607 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2611 831 2 6 BoxColFill
+2611 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2613 831 2 21 BoxColFill
+2613 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2615 831 1 16 BoxColFill
+2615 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2616 831 2 11 BoxColFill
+2616 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2618 831 2 16 BoxColFill
+2618 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2619 831 2 21 BoxColFill
+2619 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2621 831 2 11 BoxColFill
+2621 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2622 831 2 11 BoxColFill
+2622 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2626 831 2 11 BoxColFill
+2626 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2629 831 1 16 BoxColFill
+2629 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2630 831 2 11 BoxColFill
+2630 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2632 831 2 6 BoxColFill
+2632 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2634 831 2 6 BoxColFill
+2634 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2636 831 2 6 BoxColFill
+2636 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2638 831 2 11 BoxColFill
+2638 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2642 831 2 11 BoxColFill
+2642 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2643 831 1 6 BoxColFill
+2643 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2646 831 2 16 BoxColFill
+2646 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2648 831 2 6 BoxColFill
+2648 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2650 831 1 6 BoxColFill
+2650 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2654 831 2 6 BoxColFill
+2654 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2658 831 2 11 BoxColFill
+2658 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2660 831 2 6 BoxColFill
+2660 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2664 831 1 11 BoxColFill
+2664 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2665 831 2 16 BoxColFill
+2665 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2668 831 2 6 BoxColFill
+2668 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2670 831 2 6 BoxColFill
+2670 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2672 831 1 6 BoxColFill
+2672 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2673 831 2 11 BoxColFill
+2673 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2674 831 2 11 BoxColFill
+2674 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2676 831 2 11 BoxColFill
+2676 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2678 831 1 21 BoxColFill
+2678 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 2679 831 2 6 BoxColFill
+2679 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2681 831 2 11 BoxColFill
+2681 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2684 831 2 16 BoxColFill
+2684 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2686 831 1 6 BoxColFill
+2686 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2692 831 1 6 BoxColFill
+2692 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2693 831 2 11 BoxColFill
+2693 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2695 831 2 6 BoxColFill
+2695 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2697 831 2 6 BoxColFill
+2697 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2700 831 1 6 BoxColFill
+2700 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2701 831 2 11 BoxColFill
+2701 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2703 831 2 6 BoxColFill
+2703 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2706 831 1 11 BoxColFill
+2706 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2709 831 2 21 BoxColFill
+2709 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2711 831 2 21 BoxColFill
+2711 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2713 831 2 11 BoxColFill
+2713 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2714 831 1 11 BoxColFill
+2714 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2717 831 2 16 BoxColFill
+2717 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2719 831 2 11 BoxColFill
+2719 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2721 831 1 11 BoxColFill
+2721 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2721 831 2 6 BoxColFill
+2721 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2723 831 2 16 BoxColFill
+2723 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2725 831 2 16 BoxColFill
+2725 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2727 831 2 16 BoxColFill
+2727 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2728 831 2 11 BoxColFill
+2728 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2729 831 2 11 BoxColFill
+2729 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2731 831 2 11 BoxColFill
+2731 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2733 831 2 6 BoxColFill
+2733 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2735 831 1 16 BoxColFill
+2735 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2736 831 2 26 BoxColFill
+2736 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 2737 831 2 16 BoxColFill
+2737 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2739 831 2 16 BoxColFill
+2739 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2741 831 2 16 BoxColFill
+2741 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2743 831 1 16 BoxColFill
+2743 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2744 831 2 11 BoxColFill
+2744 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2745 831 2 6 BoxColFill
+2745 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2747 831 2 6 BoxColFill
+2747 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2749 831 1 16 BoxColFill
+2749 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2750 831 2 6 BoxColFill
+2750 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2752 831 2 6 BoxColFill
+2752 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2753 831 2 6 BoxColFill
+2753 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2755 831 2 16 BoxColFill
+2755 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2757 831 1 26 BoxColFill
+2757 831 N
+0 25 V
+0 -25 V
+Z stroke
+0.500 2758 831 2 6 BoxColFill
+2758 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2761 831 2 30 BoxColFill
+2761 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 2763 831 1 11 BoxColFill
+2763 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2764 831 2 6 BoxColFill
+2764 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2769 831 2 6 BoxColFill
+2769 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2771 831 1 6 BoxColFill
+2771 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2774 831 2 11 BoxColFill
+2774 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2776 831 2 6 BoxColFill
+2776 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2777 831 1 16 BoxColFill
+2777 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2782 831 2 11 BoxColFill
+2782 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2785 831 1 6 BoxColFill
+2785 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2786 831 2 11 BoxColFill
+2786 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2788 831 2 11 BoxColFill
+2788 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2790 831 2 11 BoxColFill
+2790 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2792 831 1 11 BoxColFill
+2792 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2796 831 2 16 BoxColFill
+2796 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2798 831 1 6 BoxColFill
+2798 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2801 831 2 6 BoxColFill
+2801 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2802 831 2 16 BoxColFill
+2802 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2804 831 2 6 BoxColFill
+2804 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2806 831 1 16 BoxColFill
+2806 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2807 831 2 6 BoxColFill
+2807 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2810 831 2 11 BoxColFill
+2810 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2820 831 1 6 BoxColFill
+2820 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2821 831 2 11 BoxColFill
+2821 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2823 831 2 6 BoxColFill
+2823 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2826 831 2 6 BoxColFill
+2826 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2827 831 2 6 BoxColFill
+2827 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2831 831 2 6 BoxColFill
+2831 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2835 831 2 6 BoxColFill
+2835 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2837 831 2 11 BoxColFill
+2837 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2839 831 2 6 BoxColFill
+2839 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2842 831 1 11 BoxColFill
+2842 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2843 831 2 6 BoxColFill
+2843 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2845 831 2 6 BoxColFill
+2845 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2847 831 2 16 BoxColFill
+2847 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2849 831 1 11 BoxColFill
+2849 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2849 831 2 6 BoxColFill
+2849 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2851 831 2 16 BoxColFill
+2851 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2853 831 2 6 BoxColFill
+2853 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2855 831 1 6 BoxColFill
+2855 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2856 831 2 11 BoxColFill
+2856 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2857 831 2 11 BoxColFill
+2857 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2859 831 2 6 BoxColFill
+2859 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2861 831 2 6 BoxColFill
+2861 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2863 831 1 16 BoxColFill
+2863 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2864 831 2 16 BoxColFill
+2864 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2865 831 2 16 BoxColFill
+2865 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2867 831 2 6 BoxColFill
+2867 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2869 831 1 16 BoxColFill
+2869 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 2870 831 2 21 BoxColFill
+2870 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2872 831 2 21 BoxColFill
+2872 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2875 831 2 11 BoxColFill
+2875 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2877 831 1 11 BoxColFill
+2877 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2878 831 2 11 BoxColFill
+2878 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2881 831 2 21 BoxColFill
+2881 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2883 831 1 11 BoxColFill
+2883 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2884 831 2 21 BoxColFill
+2884 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2888 831 2 21 BoxColFill
+2888 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2892 831 2 16 BoxColFill
+2892 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2894 831 2 16 BoxColFill
+2894 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2896 831 2 6 BoxColFill
+2896 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2897 831 2 11 BoxColFill
+2897 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2898 831 2 16 BoxColFill
+2898 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2900 831 2 26 BoxColFill
+2900 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 2902 831 2 21 BoxColFill
+2902 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2904 831 2 16 BoxColFill
+2904 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2905 831 1 11 BoxColFill
+2905 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2906 831 2 11 BoxColFill
+2906 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2908 831 2 11 BoxColFill
+2908 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2910 831 2 6 BoxColFill
+2910 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2912 831 1 30 BoxColFill
+2912 831 N
+0 29 V
+0 -29 V
+Z stroke
+0.500 2912 831 2 11 BoxColFill
+2912 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2914 831 2 6 BoxColFill
+2914 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2916 831 2 6 BoxColFill
+2916 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2918 831 2 11 BoxColFill
+2918 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2919 831 2 6 BoxColFill
+2919 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2920 831 2 11 BoxColFill
+2920 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2922 831 2 30 BoxColFill
+2922 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 2924 831 2 35 BoxColFill
+2924 831 N
+0 34 V
+1 0 V
+0 -34 V
+-1 0 V
+Z stroke
+0.500 2926 831 1 6 BoxColFill
+2926 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2928 831 2 6 BoxColFill
+2928 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2930 831 2 11 BoxColFill
+2930 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2932 831 2 21 BoxColFill
+2932 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2934 831 1 11 BoxColFill
+2934 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2935 831 2 21 BoxColFill
+2935 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 2936 831 2 11 BoxColFill
+2936 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2938 831 2 6 BoxColFill
+2938 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2940 831 1 6 BoxColFill
+2940 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 2941 831 2 11 BoxColFill
+2941 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2943 831 2 6 BoxColFill
+2943 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2944 831 2 6 BoxColFill
+2944 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2946 831 2 6 BoxColFill
+2946 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2949 831 2 6 BoxColFill
+2949 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2951 831 2 6 BoxColFill
+2951 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2952 831 2 6 BoxColFill
+2952 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2955 831 2 11 BoxColFill
+2955 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 2957 831 2 16 BoxColFill
+2957 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 2959 831 2 6 BoxColFill
+2959 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2960 831 2 6 BoxColFill
+2960 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2962 831 1 11 BoxColFill
+2962 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2967 831 2 6 BoxColFill
+2967 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 2969 831 1 11 BoxColFill
+2969 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 2969 831 2 60 BoxColFill
+2969 831 N
+0 59 V
+1 0 V
+0 -59 V
+-1 0 V
+Z stroke
+0.500 2985 831 2 60 BoxColFill
+2985 831 N
+0 59 V
+1 0 V
+0 -59 V
+-1 0 V
+Z stroke
+0.500 3001 831 2 65 BoxColFill
+3001 831 N
+0 64 V
+1 0 V
+0 -64 V
+-1 0 V
+Z stroke
+0.500 3017 831 2 94 BoxColFill
+3017 831 N
+0 93 V
+1 0 V
+0 -93 V
+-1 0 V
+Z stroke
+0.500 3033 831 1 79 BoxColFill
+3033 831 N
+0 78 V
+0 -78 V
+Z stroke
+0.500 3048 831 2 124 BoxColFill
+3048 831 N
+0 123 V
+1 0 V
+0 -123 V
+-1 0 V
+Z stroke
+0.500 3064 831 2 119 BoxColFill
+3064 831 N
+0 118 V
+1 0 V
+0 -118 V
+-1 0 V
+Z stroke
+0.500 3080 831 2 173 BoxColFill
+3080 831 N
+0 172 V
+1 0 V
+0 -172 V
+-1 0 V
+Z stroke
+0.500 3096 831 1 153 BoxColFill
+3096 831 N
+0 152 V
+0 -152 V
+Z stroke
+0.500 3111 831 2 158 BoxColFill
+3111 831 N
+0 157 V
+1 0 V
+0 -157 V
+-1 0 V
+Z stroke
+0.500 3127 831 2 187 BoxColFill
+3127 831 N
+0 186 V
+1 0 V
+0 -186 V
+-1 0 V
+Z stroke
+0.500 3144 831 2 79 BoxColFill
+3144 831 N
+0 78 V
+1 0 V
+0 -78 V
+-1 0 V
+Z stroke
+0.500 3160 831 1 26 BoxColFill
+3160 831 N
+0 25 V
+0 -25 V
+Z stroke
+0.500 3175 831 2 6 BoxColFill
+3175 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 3207 831 2 6 BoxColFill
+3207 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 3223 831 1 21 BoxColFill
+3223 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 3238 831 2 21 BoxColFill
+3238 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 3254 831 2 50 BoxColFill
+3254 831 N
+0 49 V
+1 0 V
+0 -49 V
+-1 0 V
+Z stroke
+0.500 3270 831 2 217 BoxColFill
+3270 831 N
+0 216 V
+1 0 V
+0 -216 V
+-1 0 V
+Z stroke
+0.500 3286 831 2 266 BoxColFill
+3286 831 N
+0 265 V
+1 0 V
+0 -265 V
+-1 0 V
+Z stroke
+0.500 3302 831 1 99 BoxColFill
+3302 831 N
+0 98 V
+0 -98 V
+Z stroke
+0.500 3317 831 2 26 BoxColFill
+3317 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 3333 831 2 21 BoxColFill
+3333 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 3349 831 2 6 BoxColFill
+3349 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 3365 831 1 6 BoxColFill
+3365 831 N
+0 5 V
+0 -5 V
+Z stroke
+0.500 3380 831 2 21 BoxColFill
+3380 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 3396 831 2 16 BoxColFill
+3396 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 3412 831 2 75 BoxColFill
+3412 831 N
+0 74 V
+1 0 V
+0 -74 V
+-1 0 V
+Z stroke
+0.500 3428 831 1 231 BoxColFill
+3428 831 N
+0 230 V
+0 -230 V
+Z stroke
+0.500 3443 831 2 290 BoxColFill
+3443 831 N
+0 289 V
+1 0 V
+0 -289 V
+-1 0 V
+Z stroke
+0.500 3459 831 2 114 BoxColFill
+3459 831 N
+0 113 V
+1 0 V
+0 -113 V
+-1 0 V
+Z stroke
+0.500 3475 831 2 50 BoxColFill
+3475 831 N
+0 49 V
+1 0 V
+0 -49 V
+-1 0 V
+Z stroke
+0.500 3491 831 2 35 BoxColFill
+3491 831 N
+0 34 V
+1 0 V
+0 -34 V
+-1 0 V
+Z stroke
+0.500 3507 831 1 16 BoxColFill
+3507 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 3522 831 2 11 BoxColFill
+3522 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 3538 831 2 21 BoxColFill
+3538 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 3554 831 2 45 BoxColFill
+3554 831 N
+0 44 V
+1 0 V
+0 -44 V
+-1 0 V
+Z stroke
+0.500 3570 831 1 70 BoxColFill
+3570 831 N
+0 69 V
+0 -69 V
+Z stroke
+0.500 3585 831 2 241 BoxColFill
+3585 831 N
+0 240 V
+1 0 V
+0 -240 V
+-1 0 V
+Z stroke
+0.500 3601 831 2 197 BoxColFill
+3601 831 N
+0 196 V
+1 0 V
+0 -196 V
+-1 0 V
+Z stroke
+0.500 3617 831 2 148 BoxColFill
+3617 831 N
+0 147 V
+1 0 V
+0 -147 V
+-1 0 V
+Z stroke
+0.500 3633 831 2 60 BoxColFill
+3633 831 N
+0 59 V
+1 0 V
+0 -59 V
+-1 0 V
+Z stroke
+0.500 3649 831 1 45 BoxColFill
+3649 831 N
+0 44 V
+0 -44 V
+Z stroke
+0.500 3664 831 2 6 BoxColFill
+3664 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 3696 831 2 11 BoxColFill
+3696 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 3712 831 1 50 BoxColFill
+3712 831 N
+0 49 V
+0 -49 V
+Z stroke
+0.500 3727 831 2 65 BoxColFill
+3727 831 N
+0 64 V
+1 0 V
+0 -64 V
+-1 0 V
+Z stroke
+0.500 3743 831 2 256 BoxColFill
+3743 831 N
+0 255 V
+1 0 V
+0 -255 V
+-1 0 V
+Z stroke
+0.500 3759 831 2 324 BoxColFill
+3759 831 N
+0 323 V
+1 0 V
+0 -323 V
+-1 0 V
+Z stroke
+0.500 3775 831 1 109 BoxColFill
+3775 831 N
+0 108 V
+0 -108 V
+Z stroke
+0.500 3790 831 2 45 BoxColFill
+3790 831 N
+0 44 V
+1 0 V
+0 -44 V
+-1 0 V
+Z stroke
+0.500 3806 831 2 16 BoxColFill
+3806 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 3822 831 2 16 BoxColFill
+3822 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 3838 831 2 11 BoxColFill
+3838 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 3854 831 1 11 BoxColFill
+3854 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 3869 831 2 21 BoxColFill
+3869 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 3885 831 2 65 BoxColFill
+3885 831 N
+0 64 V
+1 0 V
+0 -64 V
+-1 0 V
+Z stroke
+0.500 3901 831 2 251 BoxColFill
+3901 831 N
+0 250 V
+1 0 V
+0 -250 V
+-1 0 V
+Z stroke
+0.500 3917 831 1 261 BoxColFill
+3917 831 N
+0 260 V
+0 -260 V
+Z stroke
+0.500 3932 831 2 143 BoxColFill
+3932 831 N
+0 142 V
+1 0 V
+0 -142 V
+-1 0 V
+Z stroke
+0.500 3948 831 2 35 BoxColFill
+3948 831 N
+0 34 V
+1 0 V
+0 -34 V
+-1 0 V
+Z stroke
+0.500 3964 831 2 21 BoxColFill
+3964 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 3980 831 1 11 BoxColFill
+3980 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 3995 831 2 21 BoxColFill
+3995 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 4011 831 2 26 BoxColFill
+4011 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 4028 831 2 21 BoxColFill
+4028 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 4044 831 1 70 BoxColFill
+4044 831 N
+0 69 V
+0 -69 V
+Z stroke
+0.500 4059 831 2 212 BoxColFill
+4059 831 N
+0 211 V
+1 0 V
+0 -211 V
+-1 0 V
+Z stroke
+0.500 4075 831 2 364 BoxColFill
+4075 831 N
+0 363 V
+1 0 V
+0 -363 V
+-1 0 V
+Z stroke
+0.500 4091 831 2 84 BoxColFill
+4091 831 N
+0 83 V
+1 0 V
+0 -83 V
+-1 0 V
+Z stroke
+0.500 4107 831 2 21 BoxColFill
+4107 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 4123 831 1 21 BoxColFill
+4123 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 4138 831 2 11 BoxColFill
+4138 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 4154 831 2 11 BoxColFill
+4154 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 4170 831 2 35 BoxColFill
+4170 831 N
+0 34 V
+1 0 V
+0 -34 V
+-1 0 V
+Z stroke
+0.500 4186 831 1 35 BoxColFill
+4186 831 N
+0 34 V
+0 -34 V
+Z stroke
+0.500 4201 831 2 70 BoxColFill
+4201 831 N
+0 69 V
+1 0 V
+0 -69 V
+-1 0 V
+Z stroke
+0.500 4217 831 2 222 BoxColFill
+4217 831 N
+0 221 V
+1 0 V
+0 -221 V
+-1 0 V
+Z stroke
+0.500 4233 831 2 261 BoxColFill
+4233 831 N
+0 260 V
+1 0 V
+0 -260 V
+-1 0 V
+Z stroke
+0.500 4249 831 1 104 BoxColFill
+4249 831 N
+0 103 V
+0 -103 V
+Z stroke
+0.500 4264 831 2 40 BoxColFill
+4264 831 N
+0 39 V
+1 0 V
+0 -39 V
+-1 0 V
+Z stroke
+0.500 4280 831 2 16 BoxColFill
+4280 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 4296 831 2 6 BoxColFill
+4296 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 4328 831 1 40 BoxColFill
+4328 831 N
+0 39 V
+0 -39 V
+Z stroke
+0.500 4343 831 2 30 BoxColFill
+4343 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 4359 831 2 138 BoxColFill
+4359 831 N
+0 137 V
+1 0 V
+0 -137 V
+-1 0 V
+Z stroke
+0.500 4375 831 2 187 BoxColFill
+4375 831 N
+0 186 V
+1 0 V
+0 -186 V
+-1 0 V
+Z stroke
+0.500 4391 831 1 236 BoxColFill
+4391 831 N
+0 235 V
+0 -235 V
+Z stroke
+0.500 4406 831 2 104 BoxColFill
+4406 831 N
+0 103 V
+1 0 V
+0 -103 V
+-1 0 V
+Z stroke
+0.500 4422 831 2 75 BoxColFill
+4422 831 N
+0 74 V
+1 0 V
+0 -74 V
+-1 0 V
+Z stroke
+0.500 4438 831 2 30 BoxColFill
+4438 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 4454 831 2 21 BoxColFill
+4454 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 4470 831 1 16 BoxColFill
+4470 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 4485 831 2 11 BoxColFill
+4485 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 4501 831 2 30 BoxColFill
+4501 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 4517 831 2 94 BoxColFill
+4517 831 N
+0 93 V
+1 0 V
+0 -93 V
+-1 0 V
+Z stroke
+0.500 4533 831 1 339 BoxColFill
+4533 831 N
+0 338 V
+0 -338 V
+Z stroke
+0.500 4548 831 2 266 BoxColFill
+4548 831 N
+0 265 V
+1 0 V
+0 -265 V
+-1 0 V
+Z stroke
+0.500 4564 831 2 114 BoxColFill
+4564 831 N
+0 113 V
+1 0 V
+0 -113 V
+-1 0 V
+Z stroke
+0.500 4580 831 2 40 BoxColFill
+4580 831 N
+0 39 V
+1 0 V
+0 -39 V
+-1 0 V
+Z stroke
+0.500 4596 831 1 16 BoxColFill
+4596 831 N
+0 15 V
+0 -15 V
+Z stroke
+0.500 4627 831 2 11 BoxColFill
+4627 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 4643 831 2 11 BoxColFill
+4643 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 4659 831 2 55 BoxColFill
+4659 831 N
+0 54 V
+1 0 V
+0 -54 V
+-1 0 V
+Z stroke
+0.500 4675 831 1 50 BoxColFill
+4675 831 N
+0 49 V
+0 -49 V
+Z stroke
+0.500 4690 831 2 182 BoxColFill
+4690 831 N
+0 181 V
+1 0 V
+0 -181 V
+-1 0 V
+Z stroke
+0.500 4706 831 2 177 BoxColFill
+4706 831 N
+0 176 V
+1 0 V
+0 -176 V
+-1 0 V
+Z stroke
+0.500 4722 831 2 50 BoxColFill
+4722 831 N
+0 49 V
+1 0 V
+0 -49 V
+-1 0 V
+Z stroke
+0.500 4738 831 1 26 BoxColFill
+4738 831 N
+0 25 V
+0 -25 V
+Z stroke
+0.500 4753 831 2 11 BoxColFill
+4753 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 4769 831 2 11 BoxColFill
+4769 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 4785 831 2 11 BoxColFill
+4785 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 4801 831 2 26 BoxColFill
+4801 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 4816 831 2 55 BoxColFill
+4816 831 N
+0 54 V
+1 0 V
+0 -54 V
+-1 0 V
+Z stroke
+0.500 4832 831 2 65 BoxColFill
+4832 831 N
+0 64 V
+1 0 V
+0 -64 V
+-1 0 V
+Z stroke
+0.500 4848 831 2 251 BoxColFill
+4848 831 N
+0 250 V
+1 0 V
+0 -250 V
+-1 0 V
+Z stroke
+0.500 4864 831 2 261 BoxColFill
+4864 831 N
+0 260 V
+1 0 V
+0 -260 V
+-1 0 V
+Z stroke
+0.500 4880 831 1 65 BoxColFill
+4880 831 N
+0 64 V
+0 -64 V
+Z stroke
+0.500 4896 831 2 16 BoxColFill
+4896 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 4912 831 2 30 BoxColFill
+4912 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 4928 831 2 6 BoxColFill
+4928 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 4944 831 1 11 BoxColFill
+4944 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 4959 831 2 26 BoxColFill
+4959 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 4975 831 2 60 BoxColFill
+4975 831 N
+0 59 V
+1 0 V
+0 -59 V
+-1 0 V
+Z stroke
+0.500 4991 831 2 99 BoxColFill
+4991 831 N
+0 98 V
+1 0 V
+0 -98 V
+-1 0 V
+Z stroke
+0.500 5007 831 1 187 BoxColFill
+5007 831 N
+0 186 V
+0 -186 V
+Z stroke
+0.500 5022 831 2 290 BoxColFill
+5022 831 N
+0 289 V
+1 0 V
+0 -289 V
+-1 0 V
+Z stroke
+0.500 5038 831 2 114 BoxColFill
+5038 831 N
+0 113 V
+1 0 V
+0 -113 V
+-1 0 V
+Z stroke
+0.500 5054 831 2 40 BoxColFill
+5054 831 N
+0 39 V
+1 0 V
+0 -39 V
+-1 0 V
+Z stroke
+0.500 5070 831 2 11 BoxColFill
+5070 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 5101 831 2 21 BoxColFill
+5101 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 5117 831 2 16 BoxColFill
+5117 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 5133 831 2 26 BoxColFill
+5133 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 5149 831 1 89 BoxColFill
+5149 831 N
+0 88 V
+0 -88 V
+Z stroke
+0.500 5164 831 2 202 BoxColFill
+5164 831 N
+0 201 V
+1 0 V
+0 -201 V
+-1 0 V
+Z stroke
+0.500 5180 831 2 280 BoxColFill
+5180 831 N
+0 279 V
+1 0 V
+0 -279 V
+-1 0 V
+Z stroke
+0.500 5196 831 2 148 BoxColFill
+5196 831 N
+0 147 V
+1 0 V
+0 -147 V
+-1 0 V
+Z stroke
+0.500 5212 831 1 21 BoxColFill
+5212 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 5227 831 2 26 BoxColFill
+5227 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 5243 831 2 16 BoxColFill
+5243 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 5275 831 2 21 BoxColFill
+5275 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 5291 831 1 40 BoxColFill
+5291 831 N
+0 39 V
+0 -39 V
+Z stroke
+0.500 5306 831 2 99 BoxColFill
+5306 831 N
+0 98 V
+1 0 V
+0 -98 V
+-1 0 V
+Z stroke
+0.500 5322 831 2 290 BoxColFill
+5322 831 N
+0 289 V
+1 0 V
+0 -289 V
+-1 0 V
+Z stroke
+0.500 5338 831 2 266 BoxColFill
+5338 831 N
+0 265 V
+1 0 V
+0 -265 V
+-1 0 V
+Z stroke
+0.500 5354 831 1 89 BoxColFill
+5354 831 N
+0 88 V
+0 -88 V
+Z stroke
+0.500 5369 831 2 35 BoxColFill
+5369 831 N
+0 34 V
+1 0 V
+0 -34 V
+-1 0 V
+Z stroke
+0.500 5385 831 2 21 BoxColFill
+5385 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 5401 831 2 11 BoxColFill
+5401 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 5432 831 2 11 BoxColFill
+5432 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 5448 831 2 16 BoxColFill
+5448 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 5464 831 2 84 BoxColFill
+5464 831 N
+0 83 V
+1 0 V
+0 -83 V
+-1 0 V
+Z stroke
+0.500 5480 831 2 212 BoxColFill
+5480 831 N
+0 211 V
+1 0 V
+0 -211 V
+-1 0 V
+Z stroke
+0.500 5496 831 1 320 BoxColFill
+5496 831 N
+0 319 V
+0 -319 V
+Z stroke
+0.500 5511 831 2 119 BoxColFill
+5511 831 N
+0 118 V
+1 0 V
+0 -118 V
+-1 0 V
+Z stroke
+0.500 5527 831 2 30 BoxColFill
+5527 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 5543 831 2 16 BoxColFill
+5543 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 5559 831 1 21 BoxColFill
+5559 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 5574 831 2 21 BoxColFill
+5574 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 5590 831 2 21 BoxColFill
+5590 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 5606 831 2 11 BoxColFill
+5606 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 5622 831 2 109 BoxColFill
+5622 831 N
+0 108 V
+1 0 V
+0 -108 V
+-1 0 V
+Z stroke
+0.500 5637 831 2 212 BoxColFill
+5637 831 N
+0 211 V
+1 0 V
+0 -211 V
+-1 0 V
+Z stroke
+0.500 5653 831 2 271 BoxColFill
+5653 831 N
+0 270 V
+1 0 V
+0 -270 V
+-1 0 V
+Z stroke
+0.500 5669 831 2 148 BoxColFill
+5669 831 N
+0 147 V
+1 0 V
+0 -147 V
+-1 0 V
+Z stroke
+0.500 5685 831 2 35 BoxColFill
+5685 831 N
+0 34 V
+1 0 V
+0 -34 V
+-1 0 V
+Z stroke
+0.500 5701 831 1 30 BoxColFill
+5701 831 N
+0 29 V
+0 -29 V
+Z stroke
+0.500 5716 831 2 26 BoxColFill
+5716 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 5732 831 2 16 BoxColFill
+5732 831 N
+0 15 V
+1 0 V
+0 -15 V
+-1 0 V
+Z stroke
+0.500 5748 831 2 21 BoxColFill
+5748 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 5764 831 1 65 BoxColFill
+5764 831 N
+0 64 V
+0 -64 V
+Z stroke
+0.500 5780 831 2 75 BoxColFill
+5780 831 N
+0 74 V
+1 0 V
+0 -74 V
+-1 0 V
+Z stroke
+0.500 5796 831 2 256 BoxColFill
+5796 831 N
+0 255 V
+1 0 V
+0 -255 V
+-1 0 V
+Z stroke
+0.500 5812 831 2 217 BoxColFill
+5812 831 N
+0 216 V
+1 0 V
+0 -216 V
+-1 0 V
+Z stroke
+0.500 5828 831 1 114 BoxColFill
+5828 831 N
+0 113 V
+0 -113 V
+Z stroke
+0.500 5843 831 2 35 BoxColFill
+5843 831 N
+0 34 V
+1 0 V
+0 -34 V
+-1 0 V
+Z stroke
+0.500 5859 831 2 26 BoxColFill
+5859 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 5906 831 2 26 BoxColFill
+5906 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 5922 831 2 35 BoxColFill
+5922 831 N
+0 34 V
+1 0 V
+0 -34 V
+-1 0 V
+Z stroke
+0.500 5938 831 2 89 BoxColFill
+5938 831 N
+0 88 V
+1 0 V
+0 -88 V
+-1 0 V
+Z stroke
+0.500 5954 831 2 271 BoxColFill
+5954 831 N
+0 270 V
+1 0 V
+0 -270 V
+-1 0 V
+Z stroke
+0.500 5970 831 1 266 BoxColFill
+5970 831 N
+0 265 V
+0 -265 V
+Z stroke
+0.500 5985 831 2 109 BoxColFill
+5985 831 N
+0 108 V
+1 0 V
+0 -108 V
+-1 0 V
+Z stroke
+0.500 6001 831 2 21 BoxColFill
+6001 831 N
+0 20 V
+1 0 V
+0 -20 V
+-1 0 V
+Z stroke
+0.500 6017 831 2 6 BoxColFill
+6017 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 6033 831 1 11 BoxColFill
+6033 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 6048 831 2 30 BoxColFill
+6048 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 6064 831 2 11 BoxColFill
+6064 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 6080 831 2 30 BoxColFill
+6080 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 6096 831 2 94 BoxColFill
+6096 831 N
+0 93 V
+1 0 V
+0 -93 V
+-1 0 V
+Z stroke
+0.500 6112 831 1 261 BoxColFill
+6112 831 N
+0 260 V
+0 -260 V
+Z stroke
+0.500 6127 831 2 285 BoxColFill
+6127 831 N
+0 284 V
+1 0 V
+0 -284 V
+-1 0 V
+Z stroke
+0.500 6143 831 2 104 BoxColFill
+6143 831 N
+0 103 V
+1 0 V
+0 -103 V
+-1 0 V
+Z stroke
+0.500 6159 831 2 30 BoxColFill
+6159 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 6175 831 1 21 BoxColFill
+6175 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 6190 831 2 6 BoxColFill
+6190 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 6206 831 2 26 BoxColFill
+6206 831 N
+0 25 V
+1 0 V
+0 -25 V
+-1 0 V
+Z stroke
+0.500 6222 831 2 6 BoxColFill
+6222 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+0.500 6238 831 1 11 BoxColFill
+6238 831 N
+0 10 V
+0 -10 V
+Z stroke
+0.500 6253 831 2 45 BoxColFill
+6253 831 N
+0 44 V
+1 0 V
+0 -44 V
+-1 0 V
+Z stroke
+0.500 6269 831 2 192 BoxColFill
+6269 831 N
+0 191 V
+1 0 V
+0 -191 V
+-1 0 V
+Z stroke
+0.500 6285 831 2 153 BoxColFill
+6285 831 N
+0 152 V
+1 0 V
+0 -152 V
+-1 0 V
+Z stroke
+0.500 6301 831 2 99 BoxColFill
+6301 831 N
+0 98 V
+1 0 V
+0 -98 V
+-1 0 V
+Z stroke
+0.500 6317 831 1 21 BoxColFill
+6317 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 6332 831 2 30 BoxColFill
+6332 831 N
+0 29 V
+1 0 V
+0 -29 V
+-1 0 V
+Z stroke
+0.500 6348 831 2 40 BoxColFill
+6348 831 N
+0 39 V
+1 0 V
+0 -39 V
+-1 0 V
+Z stroke
+0.500 6380 831 1 21 BoxColFill
+6380 831 N
+0 20 V
+0 -20 V
+Z stroke
+0.500 6395 831 2 418 BoxColFill
+6395 831 N
+0 417 V
+1 0 V
+0 -417 V
+-1 0 V
+Z stroke
+0.500 6411 831 2 388 BoxColFill
+6411 831 N
+0 387 V
+1 0 V
+0 -387 V
+-1 0 V
+Z stroke
+0.500 6427 831 2 60 BoxColFill
+6427 831 N
+0 59 V
+1 0 V
+0 -59 V
+-1 0 V
+Z stroke
+0.500 6443 831 2 40 BoxColFill
+6443 831 N
+0 39 V
+1 0 V
+0 -39 V
+-1 0 V
+Z stroke
+0.500 6459 831 1 45 BoxColFill
+6459 831 N
+0 44 V
+0 -44 V
+Z stroke
+0.500 6474 831 2 11 BoxColFill
+6474 831 N
+0 10 V
+1 0 V
+0 -10 V
+-1 0 V
+Z stroke
+0.500 6506 831 2 6 BoxColFill
+6506 831 N
+0 5 V
+1 0 V
+0 -5 V
+-1 0 V
+Z stroke
+% End plot #1
+1.000 UL
+LTb
+LCb setrgbcolor
+1239 4751 N
+0 -3920 V
+5528 0 V
+0 3920 V
+-5528 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Times

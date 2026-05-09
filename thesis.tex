@@ -1,0 +1,235 @@
+%----------------------------------------------------------------------------------
+% Exemplo do uso da classe pucrs-ppgcc.cls. Veja o arquivo .cls
+% para mais detalhes e instruções.
+%----------------------------------------------------------------------------------
+
+% Seleção de idioma da monografia. Por enquanto as únicas opções
+% suportadas são 'portuguese' e 'english'
+% Para impressão em frente e verso, use a opção 'twoside'. Da
+% mesma forma, use 'oneside' para impressão em um lado apenas.
+%\documentclass[portuguese,twoside]{pucrs-ppgcc}
+\documentclass[english,twoside]{pucrs-ppgcc}
+
+%----------------------------------------------------------------
+% Coloque seus pacotes abaixo.
+%
+% Obs.: muitos pacotes de uso comum do LaTeX, como amsmath,
+% geometry e url já são automaticamente incluídos pela classe
+% (veja o arquivo .cls). Isso torna obrigatória a presença destes
+% no sistema para o uso desta classe, mas ao mesmo tempo o uso se
+% torna mais simples.  Recomendo a instalação da versão mais
+% recente da distribuição TeXLive (para Windows e UNIXes):
+% www.tug.org/texlive/
+%
+% Pacotes e opções já incluídas automaticamente:
+%
+% \RequirePackage[T1]{fontenc}[2005/09/27]
+% \RequirePackage[utf8x]{inputenc}[2008/03/30]
+% \RequirePackage[english,brazil]{babel}[2008/07/06]
+% \RequirePackage[a4paper]{geometry}[2010/09/12]
+% \RequirePackage{textcomp}[2005/09/27]
+% \RequirePackage{lmodern}[2009/10/30]
+% \RequirePackage{indentfirst}[1995/11/23]
+% \RequirePackage{setspace}[2000/12/01]
+% \RequirePackage{textcase}[2004/10/07]
+% \RequirePackage{float}[2001/11/08]
+% \RequirePackage{amsmath}[2000/07/18]
+% \RequirePackage{amssymb}[2009/06/22]
+% \RequirePackage{amsfonts}[2009/06/22]
+% \RequirePackage{url}
+% \RequirePackage[table]{xcolor}[2007/01/21]
+%----------------------------------------------------------------
+% Para inserção de figuras.
+\usepackage{graphicx}
+% Utilize a opção 'pdftex' se você estiver usando o pdflatex (que
+% permite figuras em formatos como .jpg ou .png)
+%\usepackage[pdftex]{graphicx}
+
+% Para tabelas com elementos ocupando mais de uma linha
+\usepackage{multirow}
+% Para frações na mesma linha (ex. ⅓).
+\usepackage{nicefrac}
+% Para inserir figuras lado a lado.
+% \usepackage{subfigure}
+% Para formatar algoritmos.
+% A opção [algo2e] é necessária para evitar conflitos
+% com as definições da classe.
+%\usepackage[algo2e]{algorithm2e}
+\usepackage{algorithmic}
+% Um float do tipo algoritmo. No momento
+% este pacote é incompatível com a classe.
+%\usepackage{algorithm}
+
+\usepackage{caption}
+\usepackage{subfigure}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\newtheorem{thm}{Theorem}
+\usepackage{listings}
+\usepackage{rotating}
+\usepackage{tablefootnote}
+
+
+
+
+%----------------------------------------------------------------
+% Autor (OBRIGATÓRIO)
+%----------------------------------------------------------------
+\author{Carlos Roberto Moratelli}
+
+%----------------------------------------------------------------
+% Título (OBRIGATÓRIO). Devem ser passados DOIS parâmetros,
+% o título em português E o inglês, não importando o idioma
+% escolhido. Os títulos são utilizados para a montagem da capa,
+% resumo e abstract mais tarde.
+%----------------------------------------------------------------
+\title{Uma camada leve de virtualização assistida por hardware para sistemas embarcados}
+      {A lightweight virtualization layer with hardware-assistance for embedded systems}
+
+%----------------------------------------------------------------
+% Opções para o tipo de trabalho (OBRIGATÓRIO)
+%----------------------------------------------------------------
+%\tipotrabalho{\monografia}  % Monografias em geral (e de "bônus": TCCs)
+%\tipotrabalho{\pep}         % Plano de estudo e pesquisa
+%\tipotrabalho{\dissertacao} % Dissertação
+%\tipotrabalho{\ptese}       % Proposta de tese
+\tipotrabalho{\tese}         % Tese
+
+%----------------------------------------------------------------
+% Seleção do curso ("este trabalho é um requisito parcial para
+% obtenção do grau de (mestre ou doutor) em Ciência da Computação").
+% Necessário somente para o tipo 'monografia'.
+%----------------------------------------------------------------
+%\grau{\bacharel} % Este é "bônus"
+%\grau{\mestre}
+\grau{\doutor}
+
+%----------------------------------------------------------------
+% Orientador (e Co-orientador, caso haja um). É OBRIGATÓRIO
+% informar pelo menos o orientador.
+%----------------------------------------------------------------
+\orientador{Fabiano Hessel}
+%\coorientador{Ciclano de Farias}
+
+%----------------------------------------------------------------
+% A capa é inserida automaticamente. Por isso não é necessário
+% chamar \maketitle
+%----------------------------------------------------------------
+\begin{document}
+
+%----------------------------------------------------------------
+% Depois da capa vem a dedicatória e a epígrafe.
+%----------------------------------------------------------------
+\dedicatoria{To my family and friends.}
+
+%\epigrafe{Talk is cheap. Show me the code.}
+\epigrafe{I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones.}
+         {Linus Torvalds}
+
+%----------------------------------------------------------------
+% Também dá para fazer as duas na mesma página:
+%----------------------------------------------------------------
+%\dedigrafe{Dedico este trabalho a meus pais.}
+%          {The art of simplicity is a puzzle of complexity.}
+%          {Douglas Horton}
+
+%----------------------------------------------------------------
+% A seguir, a página de agradecimentos (OPCIONAL):
+%----------------------------------------------------------------
+\begin{agradecimentos}
+
+I would like to express my sincere gratitude to those who helped me throughout all my Ph.D. years and made this dissertation possible. First of all, I would like to thank my advisor, Prof. Fabiano Passuelo Hessel, who has given me the opportunity to undertake a Ph.D. and provided me invaluable guidance and support in my Ph.D. and in my academic life in general. Thank you to all the Ph.D. committee members – Prof. Carlos Eduardo Pereira (dissertation proposal), Prof. Rodolfo Jardim de Azevedo, Prof. Rômulo Silva de Oliveira and Prof. Tiago Ferreto - for the time invested and for the valuable feedback provided.Thank you Dr. Luca Carloni and the other SLD team members at the Columbia University in the City of New York for receiving me and giving me the opportunity to work with them during my ‘sandwich’ research internship. 
+
+Eu gostaria de agraceder minha esposa, Ana Claudia, por ter estado ao meu lado durante todo o meu período de doutorado. O seu apoio e compreensão foram e continuam sendo muito importantes para mim. Obrigado pela paciência, amor e carinho durante todos esses anos. Também gostaria de agradecer aos meus pais e irmão pelo apoio durante toda a minha vida. Agradeço aos colegas e amigos do laboratório GSE/PUCRS, especialmente ao amigo Sergio Johann Filho pelas importantes discusões durante a execução do trabalho. 
+
+
+
+\end{agradecimentos}
+
+%----------------------------------------------------------------
+% Resumo, com as palavras-chave passadas por parâmetro
+% (OBRIGATÓRIO, ao menos para teses e dissertações)
+%----------------------------------------------------------------
+\begin{resumo}{Virtualização, Sistemas Embarcados, Hypervisor, Tempo-real}
+\vspace{-3.6cm}
+O poder de processamento presente nos sistemas embarcados modernos permite a adoção de técnicas de virtualização. Juntamente com os ganhos em redução de custo e melhor utilização dos recursos, como por exemplo uma melhor utilização do processador, a virtualização possibilita a co-execução de diferentes sistemas operacionais em um processador, sejam eles sistemas operacionais de tempo real (RTOS) e/ou de propósito geral (GPOS). 
+%Um sistema virtualizado pode herdar o tempo de resposta deterministico do RTOS e toda a base de software do GPOS. 
+A implementação da técnica de virtualização esta baseada em um módulo de software denominado hypervisor. %O hypervisor deve ser cuidadosamente projetado para que seja possível extrair o máximo das vantagens da virtualização.
+
+Devido a complexidade de se desenvolver uma nova camada de virtualização especialmente projetada para sistemas embarcados, muitos autores propuseram modificações em sistemas de virtualização que são largamente empregados em servidores na nuvem para melhor adapta-los às necessidades dos sistemas embarcados. Contudo, a utilização de memória e os requisitos temporais de alguns dispositivos embarcados requerem abordagens diferentes daquelas utilizadas em servidores. Além disso, a atual tendência de utilização de virtualização nos dispositivos projetados para a internet das coisas (do inglês Internet of Things - IoT) aumentou o desafio por hypervisors mais eficientes, em termos de memória e processamento. Estes fatores motivaram o surgimento de diversos hypervisors especialmente projetados para atender os requisitos dos atuais sistemas embarcados. 
+
+Nesta tese, investigou-se como a virtualização embarcada pode ser melhorada a partir de seu estado atual de desenvolvimento para atender as necessidades dos sistemas embarcados atuais. Como resultado, propõe-se um modelo de virtualização capaz de agregar os diferentes aspectos exigidos pelos sistemas embarcados. O modelo combina virtualização completa e para-virtualização em uma camada de virtualização híbrida, além da utilização de virtualização assistida por hardware. Uma implementação baseada neste modelo é apresentada e avaliada. Os resultados mostram que o hypervisor resultante possui requisitos de memória compatíveis com os dipositivos projetados para IoT. Ainda, GPOSs and RTOS podem ser executados mantendo-se o isolamento temporal entre eles e com o baixo impacto no desempenho. 
+\end{resumo}
+
+%----------------------------------------------------------------
+% Abstract, com as palavras-chave passadas por parâmetro
+% (OBRIGATÓRIO, ao menos para teses e dissertações)
+%----------------------------------------------------------------
+\begin{abstract}{Virtualization, Embedded Systems, Hypervisor, Real-time}
+
+
+\vspace{-3cm}
+The current processing power of modern embedded systems enable the adoption of virtualization techniques. In addition to the direct relationship with cost reduction and better resource utilization, virtualization permits the integration of real-time operating systems (RTOS) and general-purpose operating systems (GPOS) on the same hardware system. The resulting system may inherit deterministic time response from the RTOS and a large software base from the GPOS. However, the hypervisor must be carefully designed. 
+
+Due to the complexity of developing a virtualization layer designed specially for embedded systems from scratch, many authors have proposed modifications of the widely used server virtualization software to better adapt it to the particular needs of embedded system. However, footprint and temporal requisites of some embedded devices require different approaches than those used in server farms. Also, currently virtualization is being adapted for the field of the Internet of Things (IoT), which has increased the challenge for more efficient hypervisors. Thus, a generation of hypervisors focused on the needs of embedded systems have emerged . 
+
+This dissertation investigated how embedded virtualization can be improved, starting from the current stage of its development. As a result, it is proposed a virtualization model to aggregate different aspects required by embedded systems. The model combines full and para-virtualization in a hybrid virtualization layer. In addition, it explores the newer features of embedded processors that have recently adopted hardware-assisted virtualization. A hypervisor implementation based on this model is presented and evaluated. The results show that the implemented hypervisor has memory requirements compatible with devices designed for IoT. Moreover, general-purpose operating systems and real-time tasks can be combined while keeping them temporally isolated. Finally, the overall virtualization overhead is for most part lower than in other embedded hypervisors.
+\end{abstract}
+
+%----------------------------------------------------------------
+% Listas e sumário, nessa ordem. Somente o sumário é obrigatório,
+% portanto, comente as outras listas, caso sejam desnecessárias.
+%----------------------------------------------------------------
+\listoffigures       % Lista de figuras      (OPCIONAL)
+\listoftables        % Lista de tabelas      (OPCIONAL)
+%\listofalgorithms    % Lista de algoritmos   (OPCIONAL)
+\listofacronyms      % Lista de siglas       (OPCIONAL)
+%\listofabbreviations % Lista de abreviaturas (OPCIONAL)
+%\listofsymbols       % Lista de símbolos     (OPCIONAL)
+\tableofcontents     % Sumário               (OBRIGATÓRIO)
+
+%----------------------------------------------------------------
+% Aqui começa o desenvolvimento do trabalho. Para uma melhor
+% organização do documento, separe-o em arquivos,
+% um para cada capítulo. Para isso, utilize o comando \include,
+% como mostrado abaixo.
+%----------------------------------------------------------------
+
+\include{siglas}
+\include{chapter1/introduction}
+\include{chapter2/chapter2}
+\include{chapter3/chapter3}
+\include{chapter4/chapter4}
+\include{chapter5/chapter5}
+\include{chapter6/chapter6}
+\include{chapter7/conclusion}
+
+%----------------------------------------------------------------
+% Aqui vai a bibliografia. Existem dois estilos de citação: use
+% 'ppgcc-alpha' para citações do tipo [Abc+] ou [XYZ] (em ordem
+% alfabética na bibliografia), e 'ppgcc-num' para citações
+% numéricas do tipo [1], [20], etc., em ordem de referência.
+%----------------------------------------------------------------
+%\bibliographystyle{ppgcc-alpha}
+\bibliographystyle{ppgcc-num}
+\bibliography{references}
+
+%----------------------------------------------------------------
+% Após \appendix, se iniciam os capítulos de Apêndice, com
+% numeração alfabética.
+%----------------------------------------------------------------
+\appendix
+\include{appendix/appendixA}
+%\chapter{My second appendix}
+
+%----------------------------------------------------------------
+% Aqui vão os "capítulos" de anexos. Cada anexo deve
+% ser considerado um capítulo.
+%----------------------------------------------------------------
+%\anexos
+%chapter{Meu primeiro anexo}
+%\chapter{My second attachment}
+
+% E aqui (para a felicidade de todos) termina o documento.
+\end{document}
+

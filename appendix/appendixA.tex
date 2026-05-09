@@ -1,0 +1,20 @@
+\chapter{Virtual Machine and Virtual CPU Data Structures}
+\label{appendix:a}
+
+This appendix shows the data structures used to built the virtual machine and the VCPU abstractions. 
+
+\section{Virtual Machine Data Structure}
+\label{appendix:vm}
+
+The fast\_int is given by the developers, and it determines which interrupts are eligible to the fast interrupt delivery policy in the VM. During system initialization, for each VM, the hypervisor makes an or bit-wise operation over the fast\_int with all other VMs resulting in the value of apply\_fast\_int variable. The apply\_fast\_int is the interrupt mask. It determines which interrupts are enabled during the VM's executing allowing the VM to be preempted by the hypervisor. Non-preemptable VMs have the apply\_fast\_int variable equal to zero (0).
+
+\lstset{numbers=left, stepnumber=1, numbersep=5pt}
+\lstinputlisting[language=c]{appendix/algorithms/vm.c}
+
+
+\section{VCPU Data Structure}
+\label{appendix:vcpu}
+
+The message\_t data structure defines the internal message formatting to the hypervisor communication mechanism. The message is kept in a circular buffer, defined in the message\_buffer\_t data structure, until the receiver is able to receive it. Each VCPU has its own circular buffer dedicated to its messages. The message size (MESSAGE\_SZ) and the number of messages in the circular buffer (MESSAGELIST\_SZ) impacts directly in the hypervisor footprint. 
+
+\lstinputlisting[language=c]{appendix/algorithms/vcpu.c}
