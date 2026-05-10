@@ -2,7 +2,7 @@
   "_generated_by": "TeX4All",
   "_description": "Internal project index used by the platform",
   "version": 1,
-  "rev": 2,
+  "rev": 3,
   "root_dir_id": "d_6cd1f1e2",
   "dirs": {
     "d_6cd1f1e2": {
@@ -80,10 +80,6 @@
     "d_edbf7a94": {
       "parent_id": "d_6cd1f1e2",
       "name": "src"
-    },
-    "d_b0ccbbe8": {
-      "parent_id": "d_6cd1f1e2",
-      "name": "new_folder"
     }
   },
   "files": {
@@ -1031,10 +1027,6 @@
         "f_b8cdd1e5",
         "f_0ee789ce"
       ]
-    },
-    "d_b0ccbbe8": {
-      "dirs": [],
-      "files": []
     }
   }
 }
